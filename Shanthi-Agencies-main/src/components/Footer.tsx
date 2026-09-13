@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({
               <p className="text-slate-300">
                 No. 26, Mariyamman Kovil Street,<br />
                 N.R. Palayam, Ariyankuppam Post,<br />
-                Cuddalore T.K., Tamil Nadu - 605 110<br />
+                Cuddalore T.K., Tamil Nadu - 605007<br />
                 (On the way to Aatru)
               </p>
               <p className="pt-2 border-t border-slate-700 text-amber-400 font-mono font-bold">

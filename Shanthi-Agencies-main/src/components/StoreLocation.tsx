@@ -3,7 +3,7 @@ import { MapPin, Phone, MessageSquare, Clock, Navigation, CheckCircle2, ShieldCh
 
 export const StoreLocation: React.FC = () => {
   const mapAddressQuery = encodeURIComponent(
-    'No. 26, Mariyamman Kovil Street, N.R. Palayam, Ariyankuppam Post, Cuddalore Taluk, Tamil Nadu - 605 110'
+    'No. 26, Mariyamman Kovil Street, N.R. Palayam, Ariyankuppam Post, Cuddalore Taluk, Tamil Nadu - 605007'
   );
 
   return (
@@ -52,7 +52,7 @@ export const StoreLocation: React.FC = () => {
                       N.R. Palayam <strong className="text-red-700">(On the way to Aatru)</strong>
                     </p>
                     <p className="font-semibold text-slate-800">
-                      Ariyankuppam Post, Cuddalore T.K. – 605 110
+                      Ariyankuppam Post, Cuddalore T.K. – 605007
                     </p>
                   </div>
                 </div>
