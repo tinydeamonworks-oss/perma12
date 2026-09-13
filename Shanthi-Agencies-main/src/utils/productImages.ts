@@ -174,8 +174,7 @@ export function getProductRealImageUrl(product: { id?: string; name: string; cat
     name.includes('pistol') ||
     name.includes('gun') ||
     name.includes('cap') ||
-    product.category === 'novelty_toys' ||
-    product.category === 'smoke_items'
+    product.category === 'novelty_toys'
   ) {
     return NOVELTY_PHOTOS[seed % NOVELTY_PHOTOS.length];
   }
