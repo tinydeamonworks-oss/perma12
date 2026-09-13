@@ -37,6 +37,9 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
                 Prema Fireworks
               </h1>
               <p className="text-amber-400 font-bold text-xs sm:text-base mt-0.5 sm:mt-1">
+                Cuddalore's Trusted Crackers Showroom
+              </p>
+              <p className="text-slate-300 text-[11px] sm:text-sm mt-0.5">
                 பிரேமா ஃபயர்வொர்க்ஸ் - பட்டாசு எக்ஸ்க்ளூசிவ் ஷோரூம் • Cuddalore
               </p>
 

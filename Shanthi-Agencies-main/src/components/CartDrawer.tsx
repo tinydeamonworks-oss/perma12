@@ -187,8 +187,16 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
     setIsSendingOrder(true);
 
-    // Auto-download a PDF copy of the bill/estimate before sending the order,
-    // so the customer always has a saved record even before WhatsApp opens.
+    // Open WhatsApp with the filled-in order details immediately, in the same
+    // click event, BEFORE any await. If this happens after an `await`, most
+    // mobile browsers (and some desktop ones) treat it as a background popup
+    // and block it or drop the prefilled text — this is why the customer's
+    // details were not reaching WhatsApp.
+    const encoded = generateWhatsAppMessage();
+    window.open(`https://wa.me/919600830112?text=${encoded}`, '_blank');
+
+    // Auto-download a PDF copy of the bill/estimate after WhatsApp has opened,
+    // so the customer always has a saved record too.
     try {
       const orderRef = `PREMA-${Date.now()}`;
       await downloadElementByIdAsPdf('printable-estimate-content', `Prema-Fireworks-Bill-${orderRef}.pdf`);
@@ -204,9 +212,6 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
         origin: { y: 0.6 },
       });
     } catch {}
-
-    const encoded = generateWhatsAppMessage();
-    window.open(`https://wa.me/919600830112?text=${encoded}`, '_blank');
 
     // Order sent — clear the cart and close the drawer so it's ready for a fresh order.
     onClearCart();
