@@ -43,7 +43,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-01',
     name: 'Race Car',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'ரேஸ் கார்',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 700,
@@ -58,7 +58,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-02',
     name: 'Pistol Set',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'பிஸ்டல் செட்',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 300,
@@ -73,7 +73,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-03',
     name: 'Cracking Box (3 PC)',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'கிராக்கிங் பாக்ஸ் (3 பீஸ்)',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 500,
@@ -88,7 +88,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-04',
     name: 'Electric Stone',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'எலெக்ட்ரிக் ஸ்டோன்',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 400,
@@ -103,7 +103,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-05',
     name: 'Cragly (Rly)',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'கிராக்லி (ரயில்)',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 200,
@@ -118,7 +118,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-06',
     name: 'Tom-Jerry (Rly)',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'டாம்-ஜெர்ரி (ரயில்)',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 220,
@@ -133,7 +133,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-07',
     name: 'Peacock Kitty',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'மயில் கிட்டி',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 150,
@@ -148,7 +148,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-08',
     name: 'Pappaya (5 PC)',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'பப்பாயா (5 பீஸ்)',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 250,
@@ -163,7 +163,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-09',
     name: 'Black Money',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'கருப்பு மணி',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 420,
@@ -178,7 +178,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-10',
     name: 'Cragly Kitty',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'கிராக்லி கிட்டி',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 260,
@@ -193,7 +193,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'nov-11',
     name: 'Magic Tail',
-    tamilName: 'விளையாட்டு பொருட்கள்',
+    tamilName: 'மேஜிக் டெயில்',
     category: 'novelty_toys',
     unit: '1 Piece',
     mrp: 350,
@@ -209,7 +209,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-01',
     name: 'AT 5 in 1',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'ஏ.டி 5 இன் 1',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 230,
@@ -224,7 +224,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-02',
     name: 'AT 6 in 1',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'ஏ.டி 6 இன் 1',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 230,
@@ -239,7 +239,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-03',
     name: 'AT Candy',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'ஏ.டி கேண்டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 340,
@@ -254,7 +254,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-04',
     name: 'Green Mix (AT)',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'பச்சை மிக்ஸ் (ஏ.டி)',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 220,
@@ -269,7 +269,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-05',
     name: 'Green SP (AT)',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'பச்சை எஸ்.பி (ஏ.டி)',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 180,
@@ -284,7 +284,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-06',
     name: 'Crack Jack (AT)',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'கிராக் ஜாக் (ஏ.டி)',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 320,
@@ -299,7 +299,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-07',
     name: 'SPL Big AT',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'ஸ்பெஷல் பிக் ஏ.டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 360,
@@ -314,7 +314,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-08',
     name: 'Green AT',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'பச்சை ஏ.டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 300,
@@ -329,7 +329,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-09',
     name: 'Assorted AT',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'அசோர்டட் ஏ.டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 320,
@@ -344,7 +344,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-10',
     name: 'Nacha AT',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'நாச்சா ஏ.டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 330,
@@ -359,7 +359,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-11',
     name: 'Carbon AT',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'கார்பன் ஏ.டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 330,
@@ -374,7 +374,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-12',
     name: 'Siren AT',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'சைரன் ஏ.டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 850,
@@ -389,7 +389,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-13',
     name: 'Green Big (AT)',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'பச்சை பிக் (ஏ.டி)',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 600,
@@ -404,7 +404,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-14',
     name: 'Green Spl (AT)',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'பச்சை ஸ்பெஷல் (ஏ.டி)',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 120,
@@ -419,7 +419,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-15',
     name: 'Green Disc (Big)',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'பச்சை டிஸ்க் (பிக்)',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 800,
@@ -434,7 +434,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-16',
     name: 'Color AT',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'கலர் ஏ.டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 300,
@@ -449,7 +449,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-17',
     name: 'FIP Big AT',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'எஃப்.ஐ.பி பிக் ஏ.டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 120,
@@ -464,7 +464,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'at-18',
     name: 'FIP Spl AT',
-    tamilName: 'ஏரியல் தண்டர் பட்டாசு',
+    tamilName: 'எஃப்.ஐ.பி ஸ்பெஷல் ஏ.டி',
     category: 'aerial_thunder',
     unit: '1 Piece',
     mrp: 200,
@@ -480,7 +480,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-01',
     name: 'Color Cot AT',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கலர் கோட்டி ஏ.டி',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 370,
@@ -495,7 +495,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-02',
     name: 'Color Cot Disc',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கலர் கோட்டி டிஸ்க்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 550,
@@ -510,7 +510,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-03',
     name: 'Jemi Spin Spl',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'ஜெமி ஸ்பின் ஸ்பெஷல்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 190,
@@ -525,7 +525,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-04',
     name: 'Spinner Asoka',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'ஸ்பின்னர் அசோகா',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 150,
@@ -540,7 +540,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-05',
     name: 'Spinner Disc',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'ஸ்பின்னர் டிஸ்க்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 310,
@@ -555,7 +555,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-06',
     name: 'G.C. Big',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'ஜி.சி பிக்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 60,
@@ -570,7 +570,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-07',
     name: 'Ground Chakkar Spl',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கிரவுண்ட் சக்கரம் ஸ்பெஷல்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 140,
@@ -585,7 +585,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-08',
     name: 'Ground Chakkar Disc',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கிரவுண்ட் சக்கரம் டிஸ்க்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 360,
@@ -600,7 +600,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-09',
     name: 'Cycle Super',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'சைக்கிள் சூப்பர்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 300,
@@ -615,7 +615,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-10',
     name: 'Color Cot',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கலர் கோட்டி',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 400,
@@ -630,7 +630,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-11',
     name: 'Color Cot Red',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கலர் கோட்டி சிவப்பு',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 500,
@@ -645,7 +645,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-12',
     name: 'Color Cot Pink',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கலர் கோட்டி பிங்க்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 650,
@@ -660,7 +660,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-13',
     name: 'Color Cot Disc',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கலர் கோட்டி டிஸ்க்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 450,
@@ -675,7 +675,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-14',
     name: 'Wire Chakkar',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'வயர் சக்கரம்',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 260,
@@ -690,7 +690,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-15',
     name: 'Spin Spl (Jemi)',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'ஸ்பின் ஸ்பெஷல் (ஜெமி)',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 80,
@@ -705,7 +705,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-16',
     name: 'Asoka',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'அசோகா',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 130,
@@ -720,7 +720,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-17',
     name: 'Color (Big)',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கலர் (பிக்)',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 180,
@@ -735,7 +735,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gc-18',
     name: 'Color Bomb (Big)',
-    tamilName: 'தரை சக்கரம்',
+    tamilName: 'கலர் பாம்ப் (பிக்)',
     category: 'ground_chakkars',
     unit: '1 Piece',
     mrp: 400,
@@ -751,7 +751,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-01',
     name: 'FIP Big',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'எஃப்.ஐ.பி பிக்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 180,
@@ -766,7 +766,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-02',
     name: 'FIP Spl',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'எஃப்.ஐ.பி ஸ்பெஷல்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 200,
@@ -781,7 +781,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-03',
     name: 'FIP Big (New)',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'எஃப்.ஐ.பி பிக் (நியூ)',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 150,
@@ -796,7 +796,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-04',
     name: 'FIP Spl (New)',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'எஃப்.ஐ.பி ஸ்பெஷல் (நியூ)',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 220,
@@ -811,7 +811,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-05',
     name: 'FIP Disc',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'எஃப்.ஐ.பி டிஸ்க்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 350,
@@ -826,7 +826,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-06',
     name: 'FIP Big (Big)',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'எஃப்.ஐ.பி பிக் (பிக்)',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 120,
@@ -841,7 +841,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-07',
     name: 'FIP Spl (Big)',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'எஃப்.ஐ.பி ஸ்பெஷல் (பிக்)',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 150,
@@ -856,7 +856,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-08',
     name: 'Flower Pot Big',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'ஃப்ளவர் பாட் பிக்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 75,
@@ -871,7 +871,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-09',
     name: 'Flower Pot Spl',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'ஃப்ளவர் பாட் ஸ்பெஷல்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 140,
@@ -886,7 +886,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-10',
     name: 'Flower Pot Blue',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'ஃப்ளவர் பாட் நீலம்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 130,
@@ -901,7 +901,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-11',
     name: 'Flower Pot Spl',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'ஃப்ளவர் பாட் ஸ்பெஷல்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 200,
@@ -916,7 +916,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-12',
     name: 'Flower Pot Gold',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'ஃப்ளவர் பாட் கோல்டு',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 280,
@@ -931,7 +931,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-13',
     name: 'Wonder Pot',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'வண்டர் பாட்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 360,
@@ -946,7 +946,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-14',
     name: 'Mini Dream',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'மினி ட்ரீம்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 540,
@@ -961,7 +961,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-15',
     name: 'Manga Mix',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'மாங்கா மிக்ஸ்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 200,
@@ -976,7 +976,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-16',
     name: 'Pogo Mix',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'போகோ மிக்ஸ்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 140,
@@ -1006,7 +1006,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-18',
     name: 'Color Mix',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'கலர் மிக்ஸ்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 200,
@@ -1021,7 +1021,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-19',
     name: 'Happy Shower',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'ஹேப்பி ஷவர்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 200,
@@ -1036,7 +1036,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-20',
     name: 'Blue Dream (Peacock)',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'நீலம் ட்ரீம் (மயில்)',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 400,
@@ -1051,7 +1051,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-21',
     name: '1st Small',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: '1st ஸ்மால்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 70,
@@ -1066,7 +1066,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-22',
     name: '1st Big',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: '1st பிக்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 140,
@@ -1081,7 +1081,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'fp-23',
     name: 'Flower Pot',
-    tamilName: 'பூந்தொட்டி',
+    tamilName: 'ஃப்ளவர் பாட்',
     category: 'flower_pots',
     unit: '1 Piece',
     mrp: 300,
@@ -1097,7 +1097,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'sm-01',
     name: 'Color Smoke',
-    tamilName: 'புகை பொருட்கள்',
+    tamilName: 'கலர் ஸ்மோக்',
     category: 'smoke_items',
     unit: '1 Piece',
     mrp: 250,
@@ -1112,7 +1112,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'sm-02',
     name: 'Smoke Shot',
-    tamilName: 'புகை பொருட்கள்',
+    tamilName: 'ஸ்மோக் ஷாட்',
     category: 'smoke_items',
     unit: '1 Piece',
     mrp: 600,
@@ -1128,7 +1128,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-01',
     name: 'Cut 1/2 Big Roll',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: 'கட் 1/2 பிக் ரோல்',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 260,
@@ -1143,7 +1143,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-02',
     name: '1/2 Sattai',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '1/2 சட்டை',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 60,
@@ -1158,7 +1158,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-03',
     name: '1 1/2 Sattai',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '1 1/2 சட்டை',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 140,
@@ -1173,7 +1173,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-04',
     name: 'Kuruvi',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: 'குருவி',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 10,
@@ -1188,7 +1188,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-05',
     name: '3 1/2 Lakshmi',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '3 1/2 லக்ஷ்மி',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 20,
@@ -1203,7 +1203,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-06',
     name: '1 1/2 Lakshmi',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '1 1/2 லக்ஷ்மி',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 40,
@@ -1218,7 +1218,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-07',
     name: '4 Lakshmi (Gold)',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '4 லக்ஷ்மி (கோல்டு)',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 50,
@@ -1248,7 +1248,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-09',
     name: '1 1/2 Mega Lakshmi',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '1 1/2 மெகா லக்ஷ்மி',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 100,
@@ -1263,7 +1263,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-10',
     name: '24 Disc',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '24 டிஸ்க்',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 75,
@@ -1278,7 +1278,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-11',
     name: '50 Disc',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '50 டிஸ்க்',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 150,
@@ -1293,7 +1293,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-12',
     name: '100 Disc',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '100 டிஸ்க்',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 300,
@@ -1308,7 +1308,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-13',
     name: '50 Bill',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '50 பில்',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 40,
@@ -1323,7 +1323,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-14',
     name: '100 Bill',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '100 பில்',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 80,
@@ -1338,7 +1338,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-15',
     name: '28 Chorsa',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '28 சோர்சா',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 60,
@@ -1353,7 +1353,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-16',
     name: '56 Chorsa',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '56 சோர்சா',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 50,
@@ -1368,7 +1368,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-17',
     name: '56 Ground',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '56 கிரவுண்ட்',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 60,
@@ -1383,7 +1383,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-18',
     name: '100 Wala',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '100 வாலா',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 60,
@@ -1398,7 +1398,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-19',
     name: '200 Wala',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '200 வாலா',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 120,
@@ -1413,7 +1413,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-20',
     name: '300 Wala',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '300 வாலா',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 200,
@@ -1428,7 +1428,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-21',
     name: '1000 Wala',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '1000 வாலா',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 400,
@@ -1443,7 +1443,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-22',
     name: '2000 Wala',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '2000 வாலா',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 800,
@@ -1458,7 +1458,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-23',
     name: '5000 Wala',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '5000 வாலா',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 2500,
@@ -1473,7 +1473,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gl-24',
     name: '10000 Wala',
-    tamilName: 'மாலை பட்டாசு',
+    tamilName: '10000 வாலா',
     category: 'garlands',
     unit: '1 Piece',
     mrp: 5000,
@@ -1489,7 +1489,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'rkt-01',
     name: 'Cake Rocker',
-    tamilName: 'ராக்கெட் வகைகள்',
+    tamilName: 'கேக் ராக்கர்',
     category: 'rockets',
     unit: '1 Piece',
     mrp: 200,
@@ -1504,7 +1504,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'rkt-02',
     name: 'Color Rocket',
-    tamilName: 'ராக்கெட் வகைகள்',
+    tamilName: 'கலர் ராக்கெட்',
     category: 'rockets',
     unit: '1 Piece',
     mrp: 150,
@@ -1519,7 +1519,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'rkt-03',
     name: 'K Rocket',
-    tamilName: 'ராக்கெட் வகைகள்',
+    tamilName: 'கே ராக்கெட்',
     category: 'rockets',
     unit: '1 Piece',
     mrp: 50,
@@ -1534,7 +1534,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'rkt-04',
     name: 'Rocket',
-    tamilName: 'ராக்கெட் வகைகள்',
+    tamilName: 'ராக்கெட்',
     category: 'rockets',
     unit: '1 Piece',
     mrp: 300,
@@ -1550,7 +1550,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-01',
     name: '10 cm Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '10 செ.மீ கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 30,
@@ -1565,7 +1565,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-02',
     name: 'Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 35,
@@ -1580,7 +1580,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-03',
     name: 'Red',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'சிவப்பு',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 30,
@@ -1595,7 +1595,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-04',
     name: 'Pink',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'பிங்க்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 145,
@@ -1610,7 +1610,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-05',
     name: '12 cm Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '12 செ.மீ கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 145,
@@ -1625,7 +1625,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-06',
     name: 'Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 155,
@@ -1640,7 +1640,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-07',
     name: 'Green',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'பச்சை',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 55,
@@ -1655,7 +1655,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-08',
     name: 'Orange',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'ஆரஞ்சு',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 60,
@@ -1670,7 +1670,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-09',
     name: '15 cm Black',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '15 செ.மீ கருப்பு',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 80,
@@ -1685,7 +1685,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-10',
     name: 'Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 85,
@@ -1700,7 +1700,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-11',
     name: 'Green',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'பச்சை',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 80,
@@ -1715,7 +1715,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-12',
     name: 'Red',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'சிவப்பு',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 100,
@@ -1730,7 +1730,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-13',
     name: '15 cm Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '15 செ.மீ கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 80,
@@ -1745,7 +1745,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-14',
     name: '1 1/2 ft White',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '1 1/2 அடி வெள்ளை',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 180,
@@ -1760,7 +1760,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-15',
     name: '25 cm Green',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '25 செ.மீ பச்சை',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 80,
@@ -1775,7 +1775,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-16',
     name: '28 cm Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '28 செ.மீ கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 85,
@@ -1790,7 +1790,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-17',
     name: 'White',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'வெள்ளை',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 100,
@@ -1805,7 +1805,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-18',
     name: 'Pink',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'பிங்க்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 100,
@@ -1820,7 +1820,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-19',
     name: '25 cm Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '25 செ.மீ கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 180,
@@ -1835,7 +1835,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-20',
     name: '7 cm White',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '7 செ.மீ வெள்ளை',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 220,
@@ -1850,7 +1850,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-21',
     name: 'Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 250,
@@ -1865,7 +1865,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-22',
     name: '7.5 cm Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: '7.5 செ.மீ கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 250,
@@ -1880,7 +1880,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-23',
     name: 'Color',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'கலர்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 350,
@@ -1895,7 +1895,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-24',
     name: 'Sun Moon',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'சன் மூன்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 250,
@@ -1910,7 +1910,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'spk-25',
     name: 'Color Chakkar',
-    tamilName: 'கம்பி மத்தாப்பு',
+    tamilName: 'கலர் சக்கரம்',
     category: 'sparklers',
     unit: '1 Piece',
     mrp: 300,
@@ -1926,7 +1926,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-01',
     name: 'Chota Fancy',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: 'சோட்டா ஃபேன்சி',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 70,
@@ -1941,7 +1941,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-02',
     name: '2 1/2 in Fancy',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '2 1/2 இன் ஃபேன்சி',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 1100,
@@ -1956,7 +1956,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-03',
     name: '3 in (3 PC)',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '3 இன் (3 பீஸ்)',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 400,
@@ -1971,7 +1971,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-04',
     name: '2 1/2 in Fancy',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '2 1/2 இன் ஃபேன்சி',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 300,
@@ -1986,7 +1986,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-05',
     name: '3 in Fancy',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '3 இன் ஃபேன்சி',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 300,
@@ -2001,7 +2001,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-06',
     name: '3 in Fancy',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '3 இன் ஃபேன்சி',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 350,
@@ -2016,7 +2016,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-07',
     name: '3 1/2 in (3 PC)',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '3 1/2 இன் (3 பீஸ்)',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 450,
@@ -2031,7 +2031,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-08',
     name: '4 in Fancy',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '4 இன் ஃபேன்சி',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 600,
@@ -2046,7 +2046,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-09',
     name: '4 in Double',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '4 இன் டபிள்',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 1000,
@@ -2061,7 +2061,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-10',
     name: '5 inch Fancy',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '5 இன்ச் ஃபேன்சி',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 1000,
@@ -2076,7 +2076,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-11',
     name: '2 1/2 inch Set',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '2 1/2 இன்ச் செட்',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 3500,
@@ -2091,7 +2091,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-12',
     name: '2 1/2 inch Shot',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '2 1/2 இன்ச் ஷாட்',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 5000,
@@ -2106,7 +2106,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'as-13',
     name: '3 1/2 inch Set',
-    tamilName: 'வான வேடிக்கை',
+    tamilName: '3 1/2 இன்ச் செட்',
     category: 'aerial_shots',
     unit: '1 Piece',
     mrp: 4000,
@@ -2122,7 +2122,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'msc-01',
     name: '12 Shot Deluxe',
-    tamilName: 'மல்டி ஷாட் கேக்',
+    tamilName: '12 ஷாட் டீலக்ஸ்',
     category: 'multishot_cakes',
     unit: '1 Piece',
     mrp: 1300,
@@ -2137,7 +2137,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'msc-02',
     name: '12 Shot',
-    tamilName: 'மல்டி ஷாட் கேக்',
+    tamilName: '12 ஷாட்',
     category: 'multishot_cakes',
     unit: '1 Piece',
     mrp: 350,
@@ -2152,7 +2152,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'msc-03',
     name: '20 Shot',
-    tamilName: 'மல்டி ஷாட் கேக்',
+    tamilName: '20 ஷாட்',
     category: 'multishot_cakes',
     unit: '1 Piece',
     mrp: 400,
@@ -2167,7 +2167,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'msc-04',
     name: '60 Shot',
-    tamilName: 'மல்டி ஷாட் கேக்',
+    tamilName: '60 ஷாட்',
     category: 'multishot_cakes',
     unit: '1 Piece',
     mrp: 1200,
@@ -2182,7 +2182,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'msc-05',
     name: '120 Shot',
-    tamilName: 'மல்டி ஷாட் கேக்',
+    tamilName: '120 ஷாட்',
     category: 'multishot_cakes',
     unit: '1 Piece',
     mrp: 2200,
@@ -2197,7 +2197,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'msc-06',
     name: '240 Shot',
-    tamilName: 'மல்டி ஷாட் கேக்',
+    tamilName: '240 ஷாட்',
     category: 'multishot_cakes',
     unit: '1 Piece',
     mrp: 4500,
@@ -2212,7 +2212,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'msc-07',
     name: '1000 AT Shot',
-    tamilName: 'மல்டி ஷாட் கேக்',
+    tamilName: '1000 ஏ.டி ஷாட்',
     category: 'multishot_cakes',
     unit: '1 Piece',
     mrp: 5000,
@@ -2228,7 +2228,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gift-01',
     name: '16 Item',
-    tamilName: 'பரிசு பெட்டி',
+    tamilName: '16 ஐட்டம்',
     category: 'gift_combo',
     unit: '1 Piece',
     mrp: 350,
@@ -2243,7 +2243,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gift-02',
     name: '28 Item',
-    tamilName: 'பரிசு பெட்டி',
+    tamilName: '28 ஐட்டம்',
     category: 'gift_combo',
     unit: '1 Piece',
     mrp: 500,
@@ -2258,7 +2258,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gift-03',
     name: '24 Item',
-    tamilName: 'பரிசு பெட்டி',
+    tamilName: '24 ஐட்டம்',
     category: 'gift_combo',
     unit: '1 Piece',
     mrp: 600,
@@ -2273,7 +2273,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gift-04',
     name: '28 Item',
-    tamilName: 'பரிசு பெட்டி',
+    tamilName: '28 ஐட்டம்',
     category: 'gift_combo',
     unit: '1 Piece',
     mrp: 700,
@@ -2288,7 +2288,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gift-05',
     name: '34 Item',
-    tamilName: 'பரிசு பெட்டி',
+    tamilName: '34 ஐட்டம்',
     category: 'gift_combo',
     unit: '1 Piece',
     mrp: 800,
@@ -2303,7 +2303,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gift-06',
     name: '37 Item',
-    tamilName: 'பரிசு பெட்டி',
+    tamilName: '37 ஐட்டம்',
     category: 'gift_combo',
     unit: '1 Piece',
     mrp: 950,
@@ -2318,7 +2318,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gift-07',
     name: '41 Item',
-    tamilName: 'பரிசு பெட்டி',
+    tamilName: '41 ஐட்டம்',
     category: 'gift_combo',
     unit: '1 Piece',
     mrp: 1200,
@@ -2333,7 +2333,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gift-08',
     name: '45 Item',
-    tamilName: 'பரிசு பெட்டி',
+    tamilName: '45 ஐட்டம்',
     category: 'gift_combo',
     unit: '1 Piece',
     mrp: 1400,
@@ -2348,7 +2348,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'gift-09',
     name: '55 Item',
-    tamilName: 'பரிசு பெட்டி',
+    tamilName: '55 ஐட்டம்',
     category: 'gift_combo',
     unit: '1 Piece',
     mrp: 2000,
@@ -2364,7 +2364,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-01',
     name: 'Cylinder Bomb',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'சிலிண்டர் பாம்ப்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 350,
@@ -2379,7 +2379,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-02',
     name: 'Bullet',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'புல்லட்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 300,
@@ -2394,7 +2394,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-03',
     name: 'Pentastar',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'பென்டாஸ்டார்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 200,
@@ -2409,7 +2409,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-04',
     name: 'Whistle',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'விசில்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 180,
@@ -2424,7 +2424,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-05',
     name: 'Shot',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'ஷாட்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 130,
@@ -2439,7 +2439,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-06',
     name: 'T. Comet',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'டி. காமெட்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 360,
@@ -2454,7 +2454,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-07',
     name: 'Liver',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'லிவர்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 160,
@@ -2469,7 +2469,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-08',
     name: 'Krishna',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'கிருஷ்ணா',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 350,
@@ -2484,7 +2484,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-09',
     name: 'Fast Flash',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'ஃபாஸ்ட் ஃபிளாஷ்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 130,
@@ -2499,7 +2499,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-10',
     name: 'Peacock',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'மயில்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 200,
@@ -2514,7 +2514,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-11',
     name: 'Bomb Rock',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'பாம்ப் ராக்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 200,
@@ -2529,7 +2529,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-12',
     name: 'Select',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'செலெக்ட்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 200,
@@ -2544,7 +2544,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-13',
     name: 'Star',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'ஸ்டார்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 100,
@@ -2559,7 +2559,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-14',
     name: 'Sunlight',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'சன்லைட்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 130,
@@ -2574,7 +2574,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-15',
     name: 'Hurricane',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'ஹரிக்கேன்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 130,
@@ -2589,7 +2589,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-16',
     name: 'Music Rock',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'மியூசிக் ராக்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 150,
@@ -2604,7 +2604,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-17',
     name: 'Color Sound',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'கலர் சவுண்ட்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 150,
@@ -2619,7 +2619,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-18',
     name: 'Digital Sound',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'டிஜிட்டல் சவுண்ட்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 850,
@@ -2634,7 +2634,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-19',
     name: 'Pineapple',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'பைனாப்பிள்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 100,
@@ -2649,7 +2649,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-20',
     name: 'Bat Ball',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'பேட் பால்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 300,
@@ -2664,7 +2664,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-21',
     name: 'Sky',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'ஸ்கை',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 350,
@@ -2679,7 +2679,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-22',
     name: 'Mini Sun',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'மினி சன்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 150,
@@ -2694,7 +2694,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-23',
     name: 'Peacock Sun',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'மயில் சன்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 250,
@@ -2709,7 +2709,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-24',
     name: 'Jungle Sun',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'ஜங்கிள் சன்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 300,
@@ -2724,7 +2724,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'snd-25',
     name: 'Cracker Big',
-    tamilName: 'சத்தம் பட்டாசு',
+    tamilName: 'பட்டாசு பிக்',
     category: 'sound_crackers',
     unit: '1 Piece',
     mrp: 300,
@@ -2740,7 +2740,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-01',
     name: 'Sutli Drops',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'சுட்லி ட்ராப்ஸ்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 170,
@@ -2755,7 +2755,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-02',
     name: 'Color Drops',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'கலர் ட்ராப்ஸ்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 100,
@@ -2770,7 +2770,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-03',
     name: 'Water Falls',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'வாட்டர் ஃபால்ஸ்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 200,
@@ -2785,7 +2785,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-04',
     name: 'Aqua Sonic',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'அக்வா சானிக்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 300,
@@ -2800,7 +2800,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-05',
     name: 'Peacock Fancy',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'மயில் ஃபேன்சி',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 400,
@@ -2815,7 +2815,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-06',
     name: 'Rice Stream',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'ரைஸ் ஸ்ட்ரீம்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 400,
@@ -2830,7 +2830,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-07',
     name: 'Pocket World',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'பாக்கெட் வேர்ல்ட்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 200,
@@ -2845,7 +2845,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-08',
     name: 'Hot Wheel',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'ஹாட் வீல்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 350,
@@ -2860,7 +2860,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-09',
     name: 'Mega Power',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'மெகா பவர்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 500,
@@ -2875,7 +2875,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-10',
     name: 'Silver Pot',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'வெள்ளி பாட்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 560,
@@ -2890,7 +2890,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-11',
     name: 'Golden Peacock',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'கோல்டன் மயில்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 600,
@@ -2905,7 +2905,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-12',
     name: 'Super Water',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'சூப்பர் வாட்டர்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 350,
@@ -2920,7 +2920,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-13',
     name: '1 1/2 Wave',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: '1 1/2 வேவ்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 1400,
@@ -2935,7 +2935,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-14',
     name: '1 1/2 One Mix',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: '1 1/2 ஒன் மிக்ஸ்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 160,
@@ -2950,7 +2950,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-15',
     name: '2 1/2 One Mix',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: '2 1/2 ஒன் மிக்ஸ்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 350,
@@ -2965,7 +2965,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-16',
     name: 'Fancy Wheel',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'ஃபேன்சி வீல்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 280,
@@ -2980,7 +2980,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-17',
     name: 'Mega Monster',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'மெகா மான்ஸ்டர்',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 600,
@@ -2995,7 +2995,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-18',
     name: 'Bottle (50)',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'பாட்டில் (50)',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 60,
@@ -3010,7 +3010,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-19',
     name: 'Bottle (100)',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'பாட்டில் (100)',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 70,
@@ -3025,7 +3025,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-20',
     name: 'Cracker',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'பட்டாசு',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 140,
@@ -3040,7 +3040,7 @@ export const RAW_PRODUCTS: Product[] = [
   {
     id: 'ftn-21',
     name: 'Road Show',
-    tamilName: 'நீரூற்று பட்டாசு',
+    tamilName: 'ரோட் ஷோ',
     category: 'fountains',
     unit: '1 Piece',
     mrp: 120,
