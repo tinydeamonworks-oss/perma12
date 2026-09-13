@@ -1,0 +1,48 @@
+export interface District {
+  id: string;
+  name: string;
+  tamilName: string;
+}
+
+export const TN_DISTRICTS: District[] = [
+  { id: 'Cuddalore', name: 'Cuddalore', tamilName: 'கடலூர்' },
+  { id: 'Puducherry', name: 'Puducherry / Pondicherry', tamilName: 'புதுச்சேரி' },
+  { id: 'Villupuram', name: 'Villupuram', tamilName: 'விழுப்புரம்' },
+  { id: 'Kallakurichi', name: 'Kallakurichi', tamilName: 'கள்ளக்குறிச்சி' },
+  { id: 'Chennai', name: 'Chennai', tamilName: 'சென்னை' },
+  { id: 'Chengalpattu', name: 'Chengalpattu', tamilName: 'செங்கல்பட்டு' },
+  { id: 'Kanchipuram', name: 'Kanchipuram', tamilName: 'காஞ்சிபுரம்' },
+  { id: 'Tiruvallur', name: 'Tiruvallur', tamilName: 'திருவள்ளூர்' },
+  { id: 'Ariyalur', name: 'Ariyalur', tamilName: 'அரியலூர்' },
+  { id: 'Coimbatore', name: 'Coimbatore', tamilName: 'கோயம்புத்தூர்' },
+  { id: 'Dharmapuri', name: 'Dharmapuri', tamilName: 'தர்மபுரி' },
+  { id: 'Dindigul', name: 'Dindigul', tamilName: 'திண்டுக்கல்' },
+  { id: 'Erode', name: 'Erode', tamilName: 'ஈரோடு' },
+  { id: 'Kanyakumari', name: 'Kanyakumari', tamilName: 'கன்னியாகுமரி' },
+  { id: 'Karur', name: 'Karur', tamilName: 'கரூர்' },
+  { id: 'Krishnagiri', name: 'Krishnagiri', tamilName: 'கிருஷ்ணகிரி' },
+  { id: 'Madurai', name: 'Madurai', tamilName: 'மதுரை' },
+  { id: 'Mayiladuthurai', name: 'Mayiladuthurai', tamilName: 'மயிலாடுதுறை' },
+  { id: 'Nagapattinam', name: 'Nagapattinam', tamilName: 'நாகப்பட்டினம்' },
+  { id: 'Namakkal', name: 'Namakkal', tamilName: 'நாமக்கல்' },
+  { id: 'Nilgiris', name: 'Nilgiris', tamilName: 'நீலகிரி' },
+  { id: 'Perambalur', name: 'Perambalur', tamilName: 'பெரம்பலூர்' },
+  { id: 'Pudukkottai', name: 'Pudukkottai', tamilName: 'புதுக்கோட்டை' },
+  { id: 'Ramanathapuram', name: 'Ramanathapuram', tamilName: 'ராமநாதபுரம்' },
+  { id: 'Ranipet', name: 'Ranipet', tamilName: 'ராணிப்பேட்டை' },
+  { id: 'Salem', name: 'Salem', tamilName: 'சேலம்' },
+  { id: 'Sivaganga', name: 'Sivaganga', tamilName: 'சிவகங்கை' },
+  { id: 'Tenkasi', name: 'Tenkasi', tamilName: 'தென்காசி' },
+  { id: 'Thanjavur', name: 'Thanjavur', tamilName: 'தஞ்சாவூர்' },
+  { id: 'Theni', name: 'Theni', tamilName: 'தேனி' },
+  { id: 'Thoothukudi', name: 'Thoothukudi', tamilName: 'தூத்துக்குடி' },
+  { id: 'Tiruchirappalli', name: 'Tiruchirappalli (Trichy)', tamilName: 'திருச்சிராப்பள்ளி' },
+  { id: 'Tirunelveli', name: 'Tirunelveli', tamilName: 'திருநெல்வேலி' },
+  { id: 'Tirupathur', name: 'Tirupathur', tamilName: 'திருப்பத்தூர்' },
+  { id: 'Tiruppur', name: 'Tiruppur', tamilName: 'திருப்பூர்' },
+  { id: 'Tiruvannamalai', name: 'Tiruvannamalai', tamilName: 'திருவண்ணாமலை' },
+  { id: 'Tiruvarur', name: 'Tiruvarur', tamilName: 'திருவாரூர்' },
+  { id: 'Vellore', name: 'Vellore', tamilName: 'வேலூர்' },
+  { id: 'Virudhunagar', name: 'Virudhunagar (Sivakasi)', tamilName: 'விருதுநகர்' },
+  { id: 'Other', name: 'Other State / Location', tamilName: 'மற்ற மாநிலம்' },
+];
