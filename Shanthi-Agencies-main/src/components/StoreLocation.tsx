@@ -2,10 +2,6 @@ import React from 'react';
 import { MapPin, Phone, MessageSquare, Clock, Navigation, CheckCircle2, ShieldCheck, Car, Building2 } from 'lucide-react';
 
 export const StoreLocation: React.FC = () => {
-  const mapAddressQuery = encodeURIComponent(
-    'No. 26, Mariyamman Kovil Street, N.R. Palayam, Ariyankuppam Post, Cuddalore Taluk, Tamil Nadu - 605007'
-  );
-
   return (
     <section className="py-12 bg-slate-50 text-slate-900 border-t border-slate-200" id="store-location-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -111,7 +107,7 @@ export const StoreLocation: React.FC = () => {
             {/* Quick Direction Actions */}
             <div className="flex flex-wrap items-center gap-3 mt-6 pt-4 border-t border-slate-100">
               <a
-                href={`https://www.google.com/maps/search/?api=1&query=${mapAddressQuery}`}
+                href="https://maps.app.goo.gl/RFCGR3R7TqnHdwC99"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 min-w-[200px] bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 shadow-xs transition-transform active:scale-95 text-xs sm:text-sm uppercase tracking-wider"
