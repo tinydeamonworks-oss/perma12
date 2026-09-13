@@ -45,6 +45,12 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
   const [generalError, setGeneralError] = useState<string | null>(null);
 
+  const currentState = customerInfo.state || 'Tamil Nadu';
+  const availableDistricts = useMemo(() => {
+    const found = INDIA_STATES_AND_DISTRICTS.find((s) => s.state === currentState);
+    return found ? found.districts : ['Other District / City'];
+  }, [currentState]);
+
   if (!isOpen) return null;
 
   const totalMrp = cartItems.reduce((sum, item) => sum + item.product.mrp * item.quantity, 0);
@@ -55,12 +61,6 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   // Active rewards
   const unlockedRewards = milestones.filter((m) => totalAmount >= m.minAmount);
   const nextMilestone = milestones.find((m) => totalAmount < m.minAmount);
-
-  const currentState = customerInfo.state || 'Tamil Nadu';
-  const availableDistricts = useMemo(() => {
-    const found = INDIA_STATES_AND_DISTRICTS.find((s) => s.state === currentState);
-    return found ? found.districts : ['Other District / City'];
-  }, [currentState]);
 
   // Form Validation - Compulsory fields check
   const validateForm = (): boolean => {
