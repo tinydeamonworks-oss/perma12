@@ -3180,7 +3180,16 @@ export const RAW_PRODUCTS: Product[] = [
 // This gives exactly 20% OFF festival discount for all crackers!
 export const PRODUCTS: Product[] = RAW_PRODUCTS.map((p) => {
   // If baseline price is e.g. 700, MRP is 700 / 0.8 = 875 -> 880 (giving 20% OFF: 880 - 20% ~ 700)
-  const computedMrp = Math.round((p.price / 0.8) / 10) * 10;
+  // For low-priced items (under ₹100), round to the nearest ₹5 instead of ₹10 so the
+  // MRP doesn't collapse back down to the same value as the price (e.g. ₹10 items).
+  const roundTo = p.price < 100 ? 5 : 10;
+  let computedMrp = Math.round((p.price / 0.8) / roundTo) * roundTo;
+
+  // Safety net: MRP must always be strictly greater than price so the strikethrough
+  // MRP and "20% OFF" badge always display, even for very cheap items.
+  if (computedMrp <= p.price) {
+    computedMrp = p.price + roundTo;
+  }
 
   return {
     ...p,

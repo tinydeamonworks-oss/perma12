@@ -17,6 +17,11 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { getProductRealImageUrl } from '../utils/productImages';
+import { downloadElementByIdAsPdf } from '../utils/pdfExport';
+
+// Minimum order value rules
+const MIN_ORDER_TAMIL_NADU = 2500;
+const MIN_ORDER_OTHER_STATES = 5000;
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -44,6 +49,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   const [showOrderForm, setShowOrderForm] = useState(true);
   const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
   const [generalError, setGeneralError] = useState<string | null>(null);
+  const [isSendingOrder, setIsSendingOrder] = useState(false);
 
   const currentState = customerInfo.state || 'Tamil Nadu';
   const availableDistricts = useMemo(() => {
@@ -101,6 +107,17 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
     if (Object.keys(errors).length > 0) {
       setShowOrderForm(true);
       setGeneralError('⚠️ Please complete all required customer & delivery details below.');
+      return false;
+    }
+
+    // Minimum order value check: ₹2,500 for Tamil Nadu, ₹5,000 for other states
+    const isTamilNadu = (customerInfo.state || 'Tamil Nadu').trim().toLowerCase() === 'tamil nadu';
+    const minOrderRequired = isTamilNadu ? MIN_ORDER_TAMIL_NADU : MIN_ORDER_OTHER_STATES;
+    if (totalAmount < minOrderRequired) {
+      setGeneralError(
+        `⚠️ Minimum order value for ${isTamilNadu ? 'Tamil Nadu' : customerInfo.state} is ₹${minOrderRequired.toLocaleString('en-IN')}. ` +
+        `Your current total is ₹${totalAmount.toLocaleString('en-IN')} — please add ₹${(minOrderRequired - totalAmount).toLocaleString('en-IN')} more to proceed.`
+      );
       return false;
     }
 
@@ -164,9 +181,21 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
     return encodeURIComponent(msg);
   };
 
-  const handleWhatsAppCheckout = () => {
-    if (cartItems.length === 0) return;
+  const handleWhatsAppCheckout = async () => {
+    if (cartItems.length === 0 || isSendingOrder) return;
     if (!validateForm()) return;
+
+    setIsSendingOrder(true);
+
+    // Auto-download a PDF copy of the bill/estimate before sending the order,
+    // so the customer always has a saved record even before WhatsApp opens.
+    try {
+      const orderRef = `PREMA-${Date.now()}`;
+      await downloadElementByIdAsPdf('printable-estimate-content', `Prema-Fireworks-Bill-${orderRef}.pdf`);
+    } catch (err) {
+      console.error('Bill PDF auto-download failed:', err);
+      // Don't block the order flow if PDF generation fails for any reason.
+    }
 
     try {
       confetti({
@@ -178,6 +207,11 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
     const encoded = generateWhatsAppMessage();
     window.open(`https://wa.me/919600830112?text=${encoded}`, '_blank');
+
+    // Order sent — clear the cart and close the drawer so it's ready for a fresh order.
+    onClearCart();
+    setIsSendingOrder(false);
+    onClose();
   };
 
   const handleOpenEstimateClick = () => {
@@ -581,6 +615,18 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   ₹{totalAmount.toLocaleString('en-IN')}
                 </span>
               </div>
+              {(() => {
+                const isTamilNadu = (customerInfo.state || 'Tamil Nadu').trim().toLowerCase() === 'tamil nadu';
+                const minOrderRequired = isTamilNadu ? MIN_ORDER_TAMIL_NADU : MIN_ORDER_OTHER_STATES;
+                const shortfall = minOrderRequired - totalAmount;
+                if (shortfall <= 0) return null;
+                return (
+                  <p className="text-[10.5px] text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-2.5 py-1.5 font-semibold">
+                    ℹ️ Minimum order for {isTamilNadu ? 'Tamil Nadu' : (customerInfo.state || 'other states')} is ₹{minOrderRequired.toLocaleString('en-IN')}.
+                    Add ₹{shortfall.toLocaleString('en-IN')} more to place this order.
+                  </p>
+                );
+              })()}
             </div>
 
             {/* Action Buttons: WhatsApp Checkout + PDF Estimate */}
@@ -597,12 +643,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
               <button
                 onClick={handleWhatsAppCheckout}
-                className="col-span-1 bg-emerald-600 hover:bg-emerald-500 text-white font-black py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 text-xs shadow-md transition-transform active:scale-95 cursor-pointer"
+                disabled={isSendingOrder}
+                className="col-span-1 bg-emerald-600 hover:bg-emerald-500 disabled:opacity-70 disabled:cursor-wait text-white font-black py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 text-xs shadow-md transition-transform active:scale-95 cursor-pointer"
                 id="cart-whatsapp-order-btn"
                 title="Submit order directly via WhatsApp"
               >
                 <MessageSquare className="w-4 h-4 text-emerald-100" />
-                <span>WhatsApp Order</span>
+                <span>{isSendingOrder ? 'Preparing Bill...' : 'WhatsApp Order'}</span>
               </button>
             </div>
 

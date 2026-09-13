@@ -17,10 +17,13 @@
     visibility: hidden;
   }
   #printable-estimate-content,
-  #printable-estimate-content * {
+  #printable-estimate-content *,
+  #printable-pricelist-content,
+  #printable-pricelist-content * {
     visibility: visible;
   }
-  #printable-estimate-content {
+  #printable-estimate-content,
+  #printable-pricelist-content {
     position: absolute;
     left: 0;
     top: 0;
@@ -29,5 +32,17 @@
     padding: 20px;
     background: white !important;
     color: black !important;
+  }
+  /* Let the price list's parent modal wrapper stop clipping/scrolling so the
+     full table paginates naturally across pages instead of being cut to one
+     screen-height and repeated as blank pages. */
+  #price-list-modal-overlay,
+  #price-list-modal-overlay > div {
+    position: static !important;
+    max-height: none !important;
+    overflow: visible !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
   }
 }

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CartItem, CustomerOrderInfo, OfferMilestone } from '../types';
 import { BrandLogo } from './BrandLogo';
-import { X, Printer, Download, MessageSquare, Phone, MapPin } from 'lucide-react';
+import { downloadElementByIdAsPdf } from '../utils/pdfExport';
+import { X, Printer, FileDown, MessageSquare, Phone, MapPin } from 'lucide-react';
 
 interface EstimateModalProps {
   isOpen: boolean;
@@ -18,7 +19,14 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
   customerInfo,
   milestones,
 }) => {
-  if (!isOpen) return null;
+  const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
+
+  // NOTE: This component stays mounted (rather than returning null) even when
+  // `isOpen` is false. It is positioned off-screen in that case. This keeps the
+  // `#printable-estimate-content` bill markup always present in the DOM so the
+  // Cart Drawer can silently generate/download a PDF bill (e.g. right before
+  // sending a WhatsApp order) without first requiring the user to open this
+  // modal. When `isOpen` is true it displays normally as the visible modal.
 
   const totalMrp = cartItems.reduce((sum, item) => sum + item.product.mrp * item.quantity, 0);
   const totalAmount = cartItems.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
@@ -37,8 +45,31 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
     window.print();
   };
 
+  const handleDownloadPDF = async () => {
+    if (isDownloadingPdf) return;
+    setIsDownloadingPdf(true);
+    try {
+      await downloadElementByIdAsPdf(
+        'printable-estimate-content',
+        `Prema-Fireworks-Estimate-${estimateNumber}.pdf`
+      );
+    } catch (err) {
+      console.error('Estimate PDF download failed:', err);
+    } finally {
+      setIsDownloadingPdf(false);
+    }
+  };
+
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-3 sm:p-6 bg-slate-900/70 backdrop-blur-xs" id="estimate-modal-overlay">
+    <div
+      className={
+        isOpen
+          ? 'fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-3 sm:p-6 bg-slate-900/70 backdrop-blur-xs'
+          : 'fixed top-0 -left-[9999px] z-[-1] pointer-events-none opacity-0'
+      }
+      id="estimate-modal-overlay"
+      aria-hidden={!isOpen}
+    >
       <div className="relative w-full max-w-3xl bg-white text-slate-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] border border-slate-200">
         {/* Modal Top Control Bar (Hidden during print) */}
         <div className="print:hidden bg-slate-900 text-white p-3.5 px-6 flex items-center justify-between border-b border-slate-800">
@@ -48,12 +79,22 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
 
           <div className="flex items-center gap-2">
             <button
+              onClick={handleDownloadPDF}
+              disabled={isDownloadingPdf}
+              className="bg-amber-500 hover:bg-amber-400 disabled:opacity-60 disabled:cursor-wait text-slate-950 font-bold px-3.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 transition-colors shadow-sm uppercase tracking-wider"
+              id="download-estimate-pdf-btn"
+            >
+              <FileDown className="w-3.5 h-3.5" />
+              <span>{isDownloadingPdf ? 'Preparing...' : 'Download PDF'}</span>
+            </button>
+
+            <button
               onClick={handlePrint}
               className="bg-red-700 hover:bg-red-800 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 transition-colors shadow-sm uppercase tracking-wider"
               id="print-estimate-btn"
             >
               <Printer className="w-3.5 h-3.5" />
-              <span>Print / PDF</span>
+              <span>Print</span>
             </button>
 
             <button

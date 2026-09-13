@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Product, Category } from '../types';
 import { BrandLogo } from './BrandLogo';
 import { downloadPriceListCSV } from '../utils/priceListExport';
-import { X, Download, Printer, Phone, MapPin, Search, FileSpreadsheet, Sparkles } from 'lucide-react';
+import { downloadElementByIdAsPdf } from '../utils/pdfExport';
+import { X, Download, Printer, FileDown, Phone, MapPin, Search, FileSpreadsheet, Sparkles } from 'lucide-react';
 
 interface PriceListModalProps {
   isOpen: boolean;
@@ -19,6 +20,7 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCat, setSelectedCat] = useState('all');
+  const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
 
   if (!isOpen) return null;
 
@@ -39,6 +41,21 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
 
   const handleDownloadCSV = () => {
     downloadPriceListCSV(products, categories);
+  };
+
+  const handleDownloadPDF = async () => {
+    if (isDownloadingPdf) return;
+    setIsDownloadingPdf(true);
+    try {
+      await downloadElementByIdAsPdf(
+        'printable-pricelist-content',
+        'Prema-Fireworks-Price-List.pdf'
+      );
+    } catch (err) {
+      console.error('Price list PDF download failed:', err);
+    } finally {
+      setIsDownloadingPdf(false);
+    }
   };
 
   return (
@@ -71,17 +88,30 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
               title="Download Excel / CSV file"
             >
               <Download className="w-3.5 h-3.5" />
-              <span>Download CSV/Excel</span>
+              <span className="hidden sm:inline">Download CSV/Excel</span>
+              <span className="sm:hidden">CSV</span>
+            </button>
+
+            <button
+              onClick={handleDownloadPDF}
+              disabled={isDownloadingPdf}
+              className="bg-amber-500 hover:bg-amber-400 disabled:opacity-60 disabled:cursor-wait text-slate-950 font-bold px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors shadow-sm uppercase tracking-wider"
+              id="modal-download-pdf-btn"
+              title="Download as a PDF file"
+            >
+              <FileDown className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">{isDownloadingPdf ? 'Preparing PDF...' : 'Download PDF'}</span>
+              <span className="sm:hidden">PDF</span>
             </button>
 
             <button
               onClick={handlePrint}
               className="bg-red-700 hover:bg-red-800 text-white font-bold px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 transition-colors shadow-sm uppercase tracking-wider"
-              id="modal-print-pdf-btn"
-              title="Print or Save as PDF"
+              id="modal-print-btn"
+              title="Print this price list"
             >
               <Printer className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Print / PDF</span>
+              <span className="hidden sm:inline">Print</span>
             </button>
 
             <button
