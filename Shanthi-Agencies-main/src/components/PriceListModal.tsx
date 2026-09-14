@@ -22,6 +22,25 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
   const [selectedCat, setSelectedCat] = useState('all');
   const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
 
+  // Keep a native document listener as a safety net for the close control.
+  // This ensures the X button closes even if another parent/overlay intercepts
+  // React's synthetic click event.
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleNativeClose = (event: MouseEvent) => {
+      const target = event.target as HTMLElement | null;
+      if (target?.closest('#modal-close-btn')) {
+        event.preventDefault();
+        event.stopPropagation();
+        onClose();
+      }
+    };
+
+    document.addEventListener('click', handleNativeClose, true);
+    return () => document.removeEventListener('click', handleNativeClose, true);
+  }, [isOpen, onClose]);
+
   useEffect(() => {
     if (!isOpen) return;
 
@@ -74,6 +93,7 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
             @page { size: A4 portrait; margin: 8mm 7mm; }
             html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
             body { color: #000 !important; }
+            body * { visibility: visible !important; opacity: 1 !important; }
             #print-copy { width: 100% !important; max-width: none !important; height: auto !important; overflow: visible !important; padding: 0 !important; margin: 0 !important; background: #fff !important; }
             #print-copy table { width: 100% !important; border-collapse: collapse !important; }
             #print-copy tr { break-inside: avoid !important; page-break-inside: avoid !important; }
@@ -178,11 +198,6 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
 
             <button
               type="button"
-              onMouseDown={(event) => {
-                event.preventDefault();
-                event.stopPropagation();
-                onClose();
-              }}
               onClick={(event) => {
                 event.preventDefault();
                 event.stopPropagation();
