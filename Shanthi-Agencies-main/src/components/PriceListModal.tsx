@@ -84,8 +84,10 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
       #print-copy th, #print-copy td { break-inside:avoid !important; page-break-inside:avoid !important; }
       #print-copy .print\\:hidden { display:none !important; }
       #print-copy .hidden { display:none !important; }
-      #print-copy img { max-width:100% !important; }
+      #print-copy img { width:56px !important; height:56px !important; max-width:56px !important; object-fit:cover !important; border-radius:50% !important; display:block !important; flex:none !important; }
       #print-copy > div { overflow:visible !important; max-height:none !important; height:auto !important; }
+      #print-copy #brand-logo-container { width:56px !important; height:56px !important; min-width:56px !important; display:block !important; }
+      #print-copy #brand-logo-crest { width:56px !important; height:56px !important; min-width:56px !important; min-height:56px !important; }
     `;
 
     printWindow.document.open();
