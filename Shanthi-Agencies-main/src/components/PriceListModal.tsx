@@ -86,7 +86,13 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
       #print-copy .hidden { display:none !important; }
       #print-copy img { width:56px !important; height:56px !important; max-width:56px !important; object-fit:cover !important; border-radius:50% !important; display:block !important; flex:none !important; }
       #print-copy > div { overflow:visible !important; max-height:none !important; height:auto !important; }
-      #print-copy #brand-logo-container { width:56px !important; height:56px !important; min-width:56px !important; display:block !important; }
+      #print-copy .print-price-header-top { display:flex !important; flex-direction:row !important; align-items:flex-start !important; justify-content:space-between !important; gap:16px !important; width:100% !important; }
+      #print-copy .print-price-brand { display:flex !important; flex-direction:row !important; align-items:flex-start !important; gap:12px !important; flex:1 1 auto !important; min-width:0 !important; }
+      #print-copy .print-price-brand-info { display:block !important; flex:1 1 auto !important; min-width:0 !important; }
+      #print-copy .print-price-contact { display:block !important; flex:0 0 auto !important; min-width:175px !important; }
+      #print-copy .print-price-brand-info h1 { margin:0 !important; }
+      #print-copy .print-price-brand-info p { margin:3px 0 0 !important; }
+      #print-copy #brand-logo-container { width:56px !important; height:56px !important; min-width:56px !important; display:block !important; flex:0 0 56px !important; }
       #print-copy #brand-logo-crest { width:56px !important; height:56px !important; min-width:56px !important; min-height:56px !important; }
     `;
 
@@ -247,11 +253,11 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
         {/* Printable & Scrollable Price List Body */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-8" id="printable-pricelist-content">
           {/* Header */}
-          <div className="border-b-2 border-red-700 pb-4 mb-4">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-              <div className="flex items-center gap-3">
+          <div className="print-price-header border-b-2 border-red-700 pb-4 mb-4">
+            <div className="print-price-header-top flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+              <div className="print-price-brand flex items-center gap-3">
                 <BrandLogo size="md" showText={false} />
-                <div>
+                <div className="print-price-brand-info">
                   <h1 className="font-['Cinzel',serif] text-xl sm:text-2xl font-black text-slate-900 tracking-wide uppercase">
                     PREMA FIREWORKS
                   </h1>
@@ -264,7 +270,7 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
                 </div>
               </div>
 
-              <div className="text-left sm:text-right text-xs bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+              <div className="print-price-contact text-left sm:text-right text-xs bg-slate-50 p-2.5 rounded-lg border border-slate-200">
                 <p className="font-bold text-slate-900">Direct Booking / Enquiries</p>
                 <p className="text-red-700 font-black text-sm">📞 +91 9600830112</p>
                 <p className="text-[10px] text-slate-500">Festival Season Price List</p>
