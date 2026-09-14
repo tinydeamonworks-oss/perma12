@@ -79,6 +79,16 @@
   }
 
   #printable-pricelist-content thead {
-    display: table-header-group;
+    display: table-header-group !important;
+  }
+
+  #printable-pricelist-content tbody {
+    display: table-row-group !important;
+  }
+
+  #printable-pricelist-content tr {
+    display: table-row !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
 }

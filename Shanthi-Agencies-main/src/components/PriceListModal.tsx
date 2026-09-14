@@ -22,24 +22,6 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
   const [selectedCat, setSelectedCat] = useState('all');
   const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
 
-  // Keep a native document listener as a safety net for the close control.
-  // This ensures the X button closes even if another parent/overlay intercepts
-  // React's synthetic click event.
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handleNativeClose = (event: MouseEvent) => {
-      const target = event.target as HTMLElement | null;
-      if (target?.closest('#modal-close-btn')) {
-        event.preventDefault();
-        event.stopPropagation();
-        onClose();
-      }
-    };
-
-    document.addEventListener('click', handleNativeClose, true);
-    return () => document.removeEventListener('click', handleNativeClose, true);
-  }, [isOpen, onClose]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -69,56 +51,55 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
     const source = document.getElementById('printable-pricelist-content');
     if (!source) return;
 
-    // Print from a clean, standalone document so the modal scroll container
-    // and the rest of the application can never produce blank print pages.
     const printWindow = window.open('', '_blank', 'width=1000,height=800');
-    if (!printWindow) {
-      window.print();
-      return;
-    }
+    if (!printWindow) return;
 
-    const styles = Array.from(document.querySelectorAll('link[rel="stylesheet"], style'))
-      .map((node) => node.outerHTML)
-      .join('\n');
+    const clone = source.cloneNode(true) as HTMLElement;
+    clone.removeAttribute('id');
+    clone.id = 'print-copy';
+
+    // Remove all modal/scroll behaviour from the print copy.
+    clone.className = '';
+    clone.querySelectorAll<HTMLElement>('*').forEach((el) => {
+      el.classList.remove('overflow-x-auto', 'overflow-y-auto', 'overflow-hidden', 'flex-1');
+      el.style.overflow = 'visible';
+      el.style.maxHeight = 'none';
+      el.style.height = 'auto';
+      el.style.breakInside = 'auto';
+    });
+
+    const styles = `
+      @page { size: A4 portrait; margin: 8mm 7mm; }
+      * { box-sizing: border-box !important; }
+      html, body { margin:0 !important; padding:0 !important; background:#fff !important; color:#111827 !important; }
+      body { font-family: Arial, sans-serif !important; }
+      #print-copy { display:block !important; width:100% !important; max-width:none !important; margin:0 !important; padding:0 !important; background:#fff !important; overflow:visible !important; font-family:Arial,sans-serif !important; font-size:10px !important; color:#111827 !important; }
+      #print-copy > * { display:block !important; width:100% !important; }
+      #print-copy h1, #print-copy h2, #print-copy h3, #print-copy p, #print-copy span, #print-copy td, #print-copy th { color:#111827 !important; }
+      #print-copy table th { background:#111827 !important; color:#fff !important; }
+      #print-copy table { width:100% !important; border-collapse:collapse !important; table-layout:auto !important; }
+      #print-copy thead { display:table-header-group !important; }
+      #print-copy tbody { display:table-row-group !important; }
+      #print-copy tr { display:table-row !important; break-inside:avoid !important; page-break-inside:avoid !important; }
+      #print-copy th, #print-copy td { break-inside:avoid !important; page-break-inside:avoid !important; }
+      #print-copy .print\\:hidden { display:none !important; }
+      #print-copy .hidden { display:none !important; }
+      #print-copy img { max-width:100% !important; }
+      #print-copy > div { overflow:visible !important; max-height:none !important; height:auto !important; }
+    `;
 
     printWindow.document.open();
-    printWindow.document.write(`
-      <!doctype html>
-      <html>
-        <head>
-          <meta charset="UTF-8" />
-          <title>Prema Fireworks - Complete Price List</title>
-          ${styles}
-          <style>
-            @page { size: A4 portrait; margin: 8mm 7mm; }
-            html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
-            body { color: #000 !important; }
-            body * { visibility: visible !important; opacity: 1 !important; }
-            #print-copy { width: 100% !important; max-width: none !important; height: auto !important; overflow: visible !important; padding: 0 !important; margin: 0 !important; background: #fff !important; }
-            #print-copy table { width: 100% !important; border-collapse: collapse !important; }
-            #print-copy tr { break-inside: avoid !important; page-break-inside: avoid !important; }
-            #print-copy thead { display: table-header-group !important; }
-            .print\:hidden { display: none !important; }
-          </style>
-        </head>
-        <body>
-          <div id="print-copy">${source.innerHTML}</div>
-        </body>
-      </html>
-    `);
+    printWindow.document.write(`<!doctype html><html><head><meta charset="UTF-8"><title>Prema Fireworks - Complete Price List</title><style>${styles}</style></head><body></body></html>`);
     printWindow.document.close();
+    printWindow.document.body.appendChild(clone);
 
-    const startPrint = () => {
+    const doPrint = () => {
       printWindow.focus();
       printWindow.print();
-      printWindow.close();
+      setTimeout(() => printWindow.close(), 250);
     };
 
-    if (printWindow.document.fonts?.ready) {
-      printWindow.document.fonts.ready.then(() => setTimeout(startPrint, 100));
-    } else {
-      setTimeout(startPrint, 300);
-    }
+    setTimeout(doPrint, 500);
   };
 
   const handleDownloadCSV = () => {
@@ -198,6 +179,11 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
 
             <button
               type="button"
+              onPointerDown={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                onClose();
+              }}
               onClick={(event) => {
                 event.preventDefault();
                 event.stopPropagation();

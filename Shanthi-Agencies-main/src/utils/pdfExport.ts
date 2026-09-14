@@ -10,19 +10,17 @@ export async function downloadElementAsPdf(
   const exportHost = document.createElement('div');
   exportHost.setAttribute('data-pdf-export-host', 'true');
   Object.assign(exportHost.style, {
-    position: 'fixed',
-    left: '-100000px',
+    position: 'absolute',
+    left: '-900px',
     top: '0',
     width: '794px',
     background: '#fff',
-    zIndex: '-1',
+    zIndex: '2147483647',
     pointerEvents: 'none',
   });
 
   const clone = element.cloneNode(true) as HTMLElement;
   clone.removeAttribute('id');
-
-  // Completely detach the PDF copy from modal scrolling/layout rules.
   Object.assign(clone.style, {
     display: 'block',
     position: 'static',
@@ -39,16 +37,18 @@ export async function downloadElementAsPdf(
     color: '#111827',
   });
 
-  clone.querySelectorAll<HTMLElement>('.overflow-x-auto, .overflow-y-auto').forEach((el) => {
+  clone.querySelectorAll<HTMLElement>('*').forEach((el) => {
+    el.style.maxHeight = 'none';
+    el.style.height = el.style.height === '100%' ? 'auto' : el.style.height;
     el.style.overflow = 'visible';
-    el.style.overflowX = 'visible';
-    el.style.overflowY = 'visible';
+  });
+
+  clone.querySelectorAll<HTMLElement>('.overflow-x-auto, .overflow-y-auto, .overflow-hidden').forEach((el) => {
+    el.style.overflow = 'visible';
     el.style.maxHeight = 'none';
     el.style.height = 'auto';
   });
 
-  // Prevent the site's print-only visibility CSS and Tailwind layout utilities
-  // from hiding the exported copy.
   const style = document.createElement('style');
   style.textContent = `
     [data-pdf-export-host], [data-pdf-export-host] * {
@@ -58,9 +58,11 @@ export async function downloadElementAsPdf(
       transition: none !important;
     }
     [data-pdf-export-host] .print\\:hidden { display: none !important; }
-    [data-pdf-export-host] table { width: 100% !important; border-collapse: collapse !important; }
+    [data-pdf-export-host] .hidden { display: none !important; }
+    [data-pdf-export-host] table { width: 100% !important; border-collapse: collapse !important; table-layout: auto !important; }
     [data-pdf-export-host] thead { display: table-header-group !important; }
-    [data-pdf-export-host] tr { break-inside: avoid !important; page-break-inside: avoid !important; }
+    [data-pdf-export-host] tbody { display: table-row-group !important; }
+    [data-pdf-export-host] tr { display: table-row !important; break-inside: avoid !important; page-break-inside: avoid !important; }
   `;
   exportHost.appendChild(style);
   exportHost.appendChild(clone);
@@ -86,7 +88,7 @@ export async function downloadElementAsPdf(
   };
 
   try {
-    await new Promise<void>((resolve) => requestAnimationFrame(() => setTimeout(resolve, 100)));
+    if (document.fonts?.ready) await Promise.race([document.fonts.ready, new Promise((resolve) => setTimeout(resolve, 1500))]);
     await html2pdf().from(clone).set(options).save();
   } finally {
     exportHost.remove();
