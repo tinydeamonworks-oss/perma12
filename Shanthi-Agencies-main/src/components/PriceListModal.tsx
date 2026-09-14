@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Product, Category } from '../types';
 import { BrandLogo } from './BrandLogo';
 import { downloadPriceListCSV } from '../utils/priceListExport';
-import { downloadElementByIdAsPdf } from '../utils/pdfExport';
+import { downloadPriceListAsPdf } from '../utils/priceListPdf';
 import { X, Download, Printer, FileDown, Phone, MapPin, Search, FileSpreadsheet, Sparkles } from 'lucide-react';
 
 interface PriceListModalProps {
@@ -110,12 +110,15 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
     if (isDownloadingPdf) return;
     setIsDownloadingPdf(true);
     try {
-      await downloadElementByIdAsPdf(
-        'printable-pricelist-content',
+      const source = document.getElementById('printable-pricelist-content');
+      if (!source) throw new Error('Price list content not found.');
+      await downloadPriceListAsPdf(
+        source,
         'Prema-Fireworks-Price-List.pdf'
       );
     } catch (err) {
       console.error('Price list PDF download failed:', err);
+      window.alert('PDF download failed. Please try again.');
     } finally {
       setIsDownloadingPdf(false);
     }
@@ -180,6 +183,16 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
             <button
               type="button"
               onPointerDown={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                onClose();
+              }}
+              onMouseDown={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                onClose();
+              }}
+              onTouchStart={(event) => {
                 event.preventDefault();
                 event.stopPropagation();
                 onClose();
