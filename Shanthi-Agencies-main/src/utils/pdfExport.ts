@@ -61,7 +61,8 @@ export async function downloadElementAsPdf(
     filename,
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: {
-      scale: 2,
+      // Lower canvas scale keeps large 200+ item lists responsive while preserving A4 readability.
+      scale: 1,
       useCORS: true,
       backgroundColor: '#ffffff',
       width: 794,
@@ -76,8 +77,12 @@ export async function downloadElementAsPdf(
   };
 
   try {
-    // Give the browser one frame to finish layout/fonts before html2canvas.
-    await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+    // Let React/browser finish the clone layout before starting the heavy canvas work.
+    await new Promise<void>((resolve) => requestAnimationFrame(() => setTimeout(resolve, 0)));
+    clone.querySelectorAll<HTMLElement>('*').forEach((node) => {
+      node.style.animation = 'none';
+      node.style.transition = 'none';
+    });
     await html2pdf().from(clone).set(options).save();
   } finally {
     exportHost.remove();

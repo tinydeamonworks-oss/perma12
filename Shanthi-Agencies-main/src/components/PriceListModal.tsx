@@ -47,7 +47,58 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
   });
 
   const handlePrint = () => {
-    window.print();
+    const source = document.getElementById('printable-pricelist-content');
+    if (!source) return;
+
+    // Print from a clean, standalone document so the modal scroll container
+    // and the rest of the application can never produce blank print pages.
+    const printWindow = window.open('', '_blank', 'width=1000,height=800');
+    if (!printWindow) {
+      window.print();
+      return;
+    }
+
+    const styles = Array.from(document.querySelectorAll('link[rel="stylesheet"], style'))
+      .map((node) => node.outerHTML)
+      .join('\n');
+
+    printWindow.document.open();
+    printWindow.document.write(`
+      <!doctype html>
+      <html>
+        <head>
+          <meta charset="UTF-8" />
+          <title>Prema Fireworks - Complete Price List</title>
+          ${styles}
+          <style>
+            @page { size: A4 portrait; margin: 8mm 7mm; }
+            html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+            body { color: #000 !important; }
+            #print-copy { width: 100% !important; max-width: none !important; height: auto !important; overflow: visible !important; padding: 0 !important; margin: 0 !important; background: #fff !important; }
+            #print-copy table { width: 100% !important; border-collapse: collapse !important; }
+            #print-copy tr { break-inside: avoid !important; page-break-inside: avoid !important; }
+            #print-copy thead { display: table-header-group !important; }
+            .print\:hidden { display: none !important; }
+          </style>
+        </head>
+        <body>
+          <div id="print-copy">${source.innerHTML}</div>
+        </body>
+      </html>
+    `);
+    printWindow.document.close();
+
+    const startPrint = () => {
+      printWindow.focus();
+      printWindow.print();
+      printWindow.close();
+    };
+
+    if (printWindow.document.fonts?.ready) {
+      printWindow.document.fonts.ready.then(() => setTimeout(startPrint, 100));
+    } else {
+      setTimeout(startPrint, 300);
+    }
   };
 
   const handleDownloadCSV = () => {
@@ -127,6 +178,11 @@ export const PriceListModal: React.FC<PriceListModalProps> = ({
 
             <button
               type="button"
+              onMouseDown={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                onClose();
+              }}
               onClick={(event) => {
                 event.preventDefault();
                 event.stopPropagation();
