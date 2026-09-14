@@ -13,36 +13,72 @@
 }
 
 @media print {
-  body * {
-    visibility: hidden;
+  @page {
+    size: A4 portrait;
+    margin: 8mm 7mm;
   }
+
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+
+  /* Print only the price-list/estimate content, never the app controls. */
+  body * {
+    visibility: hidden !important;
+  }
+
   #printable-estimate-content,
   #printable-estimate-content *,
   #printable-pricelist-content,
   #printable-pricelist-content * {
-    visibility: visible;
+    visibility: visible !important;
   }
-  #printable-estimate-content,
-  #printable-pricelist-content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    padding: 20px;
-    background: white !important;
-    color: black !important;
-  }
-  /* Let the price list's parent modal wrapper stop clipping/scrolling so the
-     full table paginates naturally across pages instead of being cut to one
-     screen-height and repeated as blank pages. */
+
   #price-list-modal-overlay,
   #price-list-modal-overlay > div {
     position: static !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
     max-height: none !important;
+    height: auto !important;
     overflow: visible !important;
-    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #fff !important;
     box-shadow: none !important;
     border: none !important;
+  }
+
+  #printable-pricelist-content,
+  #printable-estimate-content {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  #printable-pricelist-content table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  #printable-pricelist-content tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  #printable-pricelist-content thead {
+    display: table-header-group;
   }
 }

@@ -1,7 +1,6 @@
-// Generates and downloads a PDF directly from a rendered DOM element,
-// without requiring the browser's Print dialog. Used for:
-//  - "Download PDF" button on the wholesale Price List
-//  - Auto-downloading the customer's bill when an order is sent via WhatsApp
+// Generates a PDF from a rendered DOM element without opening the browser
+// Print dialog. The export is rendered from a detached clone so modal
+// scrolling/positioning cannot affect the PDF output.
 
 import type { Html2PdfOptions } from 'html2pdf.js';
 
@@ -9,51 +8,79 @@ export async function downloadElementAsPdf(
   element: HTMLElement,
   filename: string
 ): Promise<void> {
-  // Lazy-load html2pdf.js only when actually needed (keeps initial bundle small)
   const html2pdfModule = await import('html2pdf.js');
   const html2pdf = html2pdfModule.default;
 
-  // The bill / price-list content usually lives inside a modal that constrains
-  // it with `max-height` + `overflow-y-auto` so it fits on screen with a
-  // scrollbar. If we captured it as-is, the PDF would only include the
-  // currently-scrolled-into-view portion. So we temporarily strip
-  // height/overflow constraints off every ancestor up to the app root,
-  // capture the FULL natural content, then restore everything.
-  const restoreFns: (() => void)[] = [];
-  let node: HTMLElement | null = element;
-  while (node && node.id !== 'root') {
-    const el = node;
-    const prevOverflow = el.style.overflow;
-    const prevOverflowY = el.style.overflowY;
-    const prevMaxHeight = el.style.maxHeight;
-    const prevHeight = el.style.height;
+  // A4 width at 96 CSS px/in. Keeping the clone outside the modal removes
+  // fixed/max-height/overflow constraints and captures the complete list.
+  const exportHost = document.createElement('div');
+  exportHost.setAttribute('data-pdf-export-host', 'true');
+  Object.assign(exportHost.style, {
+    position: 'fixed',
+    left: '-100000px',
+    top: '0',
+    width: '794px',
+    minHeight: '1123px',
+    overflow: 'visible',
+    background: '#ffffff',
+    zIndex: '-1',
+    pointerEvents: 'none',
+  });
+
+  const clone = element.cloneNode(true) as HTMLElement;
+  clone.removeAttribute('id');
+  Object.assign(clone.style, {
+    width: '794px',
+    maxWidth: '794px',
+    height: 'auto',
+    maxHeight: 'none',
+    minHeight: '0',
+    overflow: 'visible',
+    overflowY: 'visible',
+    overflowX: 'visible',
+    position: 'static',
+    margin: '0',
+    boxSizing: 'border-box',
+    background: '#ffffff',
+  });
+
+  // The table's horizontal-scroll wrapper must not become a clipped PDF.
+  clone.querySelectorAll<HTMLElement>('.overflow-x-auto, .overflow-y-auto').forEach((el) => {
     el.style.overflow = 'visible';
+    el.style.overflowX = 'visible';
     el.style.overflowY = 'visible';
     el.style.maxHeight = 'none';
     el.style.height = 'auto';
-    restoreFns.push(() => {
-      el.style.overflow = prevOverflow;
-      el.style.overflowY = prevOverflowY;
-      el.style.maxHeight = prevMaxHeight;
-      el.style.height = prevHeight;
-    });
-    node = el.parentElement;
-  }
+  });
+
+  exportHost.appendChild(clone);
+  document.body.appendChild(exportHost);
 
   const options: Html2PdfOptions = {
-    margin: [10, 8, 10, 8],
+    margin: [8, 7, 8, 7],
     filename,
     image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff' },
+    html2canvas: {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: '#ffffff',
+      width: 794,
+      windowWidth: 794,
+      scrollX: 0,
+      scrollY: 0,
+    },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+    // Avoid-all can create huge/blank pages for long tables. CSS/legacy
+    // pagebreak handling lets the table flow naturally across A4 pages.
+    pagebreak: { mode: ['css', 'legacy'] },
   };
 
   try {
-    await html2pdf().from(element).set(options).save();
+    // Give the browser one frame to finish layout/fonts before html2canvas.
+    await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+    await html2pdf().from(clone).set(options).save();
   } finally {
-    // Restore original inline styles regardless of success/failure
-    restoreFns.reverse().forEach((restore) => restore());
+    exportHost.remove();
   }
 }
 
