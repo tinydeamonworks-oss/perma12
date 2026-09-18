@@ -157,6 +157,13 @@ export const USER_SUPPLIED_PRODUCT_PHOTOS: Record<string, string[]> = {
   rockets: ['/products/user-supplied/source_18.jpg', '/products/user-supplied/source_30.jpg'],
   aerial_thunder: ['/products/user-supplied/source_03.jpg', '/products/user-supplied/source_04.jpg', '/products/user-supplied/source_09.jpg'],
   aerial_shots: ['/products/user-supplied/source_01.jpg', '/products/user-supplied/source_27.jpg', '/products/user-supplied/source_29.jpg'],
+  fancy_crackers: [
+    'https://5.imimg.com/data5/SELLER/Default/2024/8/444352210/QW/ER/TY/23186397/pineapple-cracker-250x250.jpg',
+    'https://5.imimg.com/data5/SELLER/Default/2024/8/444352190/LP/XY/AB/23186397/star-cracker-250x250.jpg',
+    'https://5.imimg.com/data5/SELLER/Default/2024/8/444352240/AS/DF/GH/23186397/shot-crackers-250x250.jpg',
+    'https://5.imimg.com/data5/SELLER/Default/2024/8/444352260/JK/LZ/XC/23186397/fast-flash-crackers-250x250.jpg',
+    'https://5.imimg.com/data5/SELLER/Default/2024/8/444352280/VB/NM/QW/23186397/sunlight-crackers-250x250.jpg',
+  ],
   multishot_cakes: ['/products/user-supplied/source_01.jpg', '/products/user-supplied/source_29.jpg'],
   gift_combo: ['/products/user-supplied/source_27.jpg', '/products/user-supplied/source_31.jpg'],
 };
