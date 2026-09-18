@@ -55,6 +55,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'spk-03',
     name: 'Red',
@@ -70,6 +71,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-02',
     name: 'Color',
@@ -85,6 +87,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-07',
     name: 'Green',
@@ -100,6 +103,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-08',
     name: 'Orange',
@@ -115,6 +119,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-09',
     name: '15 cm Black',
@@ -130,6 +135,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-11',
     name: 'Green',
@@ -145,6 +151,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-13',
     name: '15 cm Color',
@@ -160,6 +167,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-15',
     name: '25 cm Green',
@@ -175,6 +183,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-10',
     name: 'Color',
@@ -190,6 +199,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-16',
     name: '28 cm Color',
@@ -205,6 +215,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-12',
     name: 'Red',
@@ -220,6 +231,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-17',
     name: 'White',
@@ -235,6 +247,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-18',
     name: 'Pink',
@@ -250,6 +263,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-04',
     name: 'Pink',
@@ -265,6 +279,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-05',
     name: '12 cm Color',
@@ -280,6 +295,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-06',
     name: 'Color',
@@ -295,6 +311,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-14',
     name: '1 1/2 ft White',
@@ -310,6 +327,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-19',
     name: '25 cm Color',
@@ -325,6 +343,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-20',
     name: '7 cm White',
@@ -340,6 +359,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-21',
     name: 'Color',
@@ -355,6 +375,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-22',
     name: '7.5 cm Color',
@@ -370,6 +391,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-24',
     name: 'Sun Moon',
@@ -385,6 +407,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-25',
     name: 'Color Chakkar',
@@ -400,6 +423,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'spk-23',
     name: 'Color',
@@ -415,7 +439,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- FLOWER POTS (FIP) ---
+
   {
     id: 'fp-21',
     name: '1st Small',
@@ -425,12 +449,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 70,
     price: 70,
     discountPercent: 0,
-    image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9ImhzbCgzMjYsNzAlLDMyJSkiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJoc2woMTAsNjUlLDE4JSkiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0idXJsKCNnKSIvPgo8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxMDUiIHI9IjU1IiBmaWxsPSJoc2woMzI2LDgwJSw1NSUpIiBmaWxsLW9wYWNpdHk9IjAuMTgiLz4KPHRleHQgeD0iMjAwIiB5PSIxMjAiIGZvbnQtc2l6ZT0iNTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPvCfjoc8L3RleHQ+Cjx0ZXh0IHg9IjIwMCIgeT0iMTg1IiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjkiPjFTPC90ZXh0Pgo8dGV4dCB4PSIyMDAiIHk9IjI3MCIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC44NSI+MXN0IFNtYWxsPC90ZXh0Pgo8L3N2Zz4=',
+    image: 'https://vaishnavifireworks.in/admin/itemimg/PDT-flower%20pots%20small.jpeg',
     description: 'Premium quality 1st Small - colourful flower pot fountain for a dazzling celebration.',
     soundLevel: 'Low',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-08',
     name: 'Flower Pot Big',
@@ -446,6 +471,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-17',
     name: 'Let\'s Party',
@@ -455,12 +481,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 100,
     price: 100,
     discountPercent: 0,
-    image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9ImhzbCgzMTcsNzAlLDMyJSkiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJoc2woNiw2NSUsMTglKSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjEwNSIgcj0iNTUiIGZpbGw9ImhzbCgzMTcsODAlLDU1JSkiIGZpbGwtb3BhY2l0eT0iMC4xOCIvPgo8dGV4dCB4PSIyMDAiIHk9IjEyMCIgZm9udC1zaXplPSI1NCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+8J+OhzwvdGV4dD4KPHRleHQgeD0iMjAwIiB5PSIxODUiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOSI+TFNQPC90ZXh0Pgo8dGV4dCB4PSIyMDAiIHk9IjI3MCIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC44NSI+TGV0XCdzIFBhcnR5PC90ZXh0Pgo8L3N2Zz4=',
+    image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/485590167/ZI/UN/FX/23186397/flower-pot-giant-red-250x250.jpg',
     description: 'Premium quality Let\'s Party - colourful flower pot fountain for a dazzling celebration.',
     soundLevel: 'Low',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-06',
     name: 'FIP Big (Big)',
@@ -476,6 +503,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-10',
     name: 'Flower Pot Blue',
@@ -491,6 +519,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-09',
     name: 'Flower Pot Spl',
@@ -500,12 +529,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 140,
     price: 140,
     discountPercent: 0,
-    image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/485587196/YM/AT/PI/23186397/flower-pots-mega-crackers-10pcs-250x250.jpg',
+    image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/485589456/OI/EG/AH/23186397/flower-pots-special-cracker-250x250.jpg',
     description: 'Premium quality Flower Pot Spl - colourful flower pot fountain for a dazzling celebration.',
     soundLevel: 'Low',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-16',
     name: 'Pogo Mix',
@@ -521,6 +551,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-22',
     name: '1st Big',
@@ -536,6 +567,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-03',
     name: 'FIP Big (New)',
@@ -551,6 +583,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-07',
     name: 'FIP Spl (Big)',
@@ -566,6 +599,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-01',
     name: 'FIP Big',
@@ -581,6 +615,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'fp-02',
     name: 'FIP Spl',
@@ -596,6 +631,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-11',
     name: 'Flower Pot Spl',
@@ -611,6 +647,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-15',
     name: 'Manga Mix',
@@ -626,6 +663,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-18',
     name: 'Color Mix',
@@ -641,6 +679,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-19',
     name: 'Happy Shower',
@@ -656,6 +695,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-04',
     name: 'FIP Spl (New)',
@@ -671,6 +711,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-12',
     name: 'Flower Pot Gold',
@@ -686,6 +727,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-23',
     name: 'Flower Pot',
@@ -701,6 +743,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-05',
     name: 'FIP Disc',
@@ -716,6 +759,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-13',
     name: 'Wonder Pot',
@@ -731,6 +775,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-20',
     name: 'Blue Dream (Peacock)',
@@ -746,6 +791,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'fp-14',
     name: 'Mini Dream',
@@ -761,7 +807,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- GROUND CHAKKARS & SPINNERS ---
+
   {
     id: 'gc-06',
     name: 'G.C. Big',
@@ -771,12 +817,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 60,
     price: 60,
     discountPercent: 0,
-    image: 'https://i.ibb.co/hBRRC9P/1000040276.jpg',
+    image: 'https://sivakasicrackersbazzar.in/cdn/shop/files/IMG-20250730-WA0010.jpg?v=1754286602&width=533',
     description: 'Premium quality G.C. Big - spinning ground chakkar for a dazzling celebration.',
     soundLevel: 'Low',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-15',
     name: 'Spin Spl (Jemi)',
@@ -792,6 +839,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-16',
     name: 'Asoka',
@@ -807,6 +855,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-07',
     name: 'Ground Chakkar Spl',
@@ -822,6 +871,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-04',
     name: 'Spinner Asoka',
@@ -837,6 +887,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-17',
     name: 'Color (Big)',
@@ -852,6 +903,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-03',
     name: 'Jemi Spin Spl',
@@ -867,6 +919,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-14',
     name: 'Wire Chakkar',
@@ -882,6 +935,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-09',
     name: 'Cycle Super',
@@ -897,6 +951,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-05',
     name: 'Spinner Disc',
@@ -912,6 +967,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-08',
     name: 'Ground Chakkar Disc',
@@ -927,6 +983,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-01',
     name: 'Color Cot AT',
@@ -942,6 +999,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'gc-10',
     name: 'Color Cot',
@@ -957,6 +1015,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-18',
     name: 'Color Bomb (Big)',
@@ -972,6 +1031,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-13',
     name: 'Color Cot Disc',
@@ -981,12 +1041,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 450,
     price: 450,
     discountPercent: 0,
-    image: 'https://sarascrackers.com/public/uploads/all/8zqcdoeYKfzQeg1Ipcbx7o5rZr6gVbT49gwGzlOm.png',
+    image: 'https://srisenthurmurugancrackers.com/uploads/productimg/spl1.jpg',
     description: 'Premium quality Color Cot Disc - spinning ground chakkar for a dazzling celebration.',
     soundLevel: 'Low',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-11',
     name: 'Color Cot Red',
@@ -1002,6 +1063,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-02',
     name: 'Color Cot Disc',
@@ -1017,6 +1079,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gc-12',
     name: 'Color Cot Pink',
@@ -1032,7 +1095,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- GARLANDS / BIJILI (WALA) ---
+
   {
     id: 'gl-04',
     name: 'Kuruvi',
@@ -1042,12 +1105,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 10,
     price: 10,
     discountPercent: 0,
-    image: 'https://fireflycrackers.com/images/products/68b69c3addf68jpg',
+    image: 'https://www.butterflycrackers.com/sites/default/files/styles/product_images/public/crackers/kuruvi-crackers.png.webp?itok=monDV0sY',
     description: 'Premium quality Kuruvi - traditional garland cracker string for a dazzling celebration.',
     soundLevel: 'High',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-05',
     name: '3 1/2 Lakshmi',
@@ -1063,6 +1127,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-25',
     name: '50 Spl Bijili',
@@ -1078,6 +1143,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-06',
     name: '1 1/2 Lakshmi',
@@ -1093,6 +1159,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-13',
     name: '50 Bill',
@@ -1108,6 +1175,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-07',
     name: '4 Lakshmi (Gold)',
@@ -1123,6 +1191,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-16',
     name: '56 Chorsa',
@@ -1138,6 +1207,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-02',
     name: '1/2 Sattai',
@@ -1153,6 +1223,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-15',
     name: '28 Chorsa',
@@ -1168,6 +1239,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-17',
     name: '56 Ground',
@@ -1183,6 +1255,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-18',
     name: '100 Wala',
@@ -1198,6 +1271,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-26',
     name: '100 Spl Bijili',
@@ -1213,6 +1287,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-10',
     name: '24 Disc',
@@ -1228,6 +1303,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-08',
     name: '5\' Kuruvi',
@@ -1237,12 +1313,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 80,
     price: 80,
     discountPercent: 0,
-    image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9ImhzbCgyMCw3MCUsMzIlKSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9ImhzbCg2Niw2NSUsMTglKSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjEwNSIgcj0iNTUiIGZpbGw9ImhzbCgyMCw4MCUsNTUlKSIgZmlsbC1vcGFjaXR5PSIwLjE4Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTIwIiBmb250LXNpemU9IjU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj7wn6eoPC90ZXh0Pgo8dGV4dCB4PSIyMDAiIHk9IjE4NSIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC45Ij41SzwvdGV4dD4KPHRleHQgeD0iMjAwIiB5PSIyNzAiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuODUiPjVcJyBLdXJ1dmk8L3RleHQ+Cjwvc3ZnPg==',
+    image: 'https://admin.sriraghavcrackers.com/media/image/uploads/1785645389_868bfc742648f71f3ec8716b6891687d.jpg',
     description: 'Premium quality 5\' Kuruvi - traditional garland cracker string for a dazzling celebration.',
     soundLevel: 'High',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-14',
     name: '100 Bill',
@@ -1258,6 +1335,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-09',
     name: '1 1/2 Mega Lakshmi',
@@ -1273,6 +1351,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-19',
     name: '200 Wala',
@@ -1288,6 +1367,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-03',
     name: '1 1/2 Sattai',
@@ -1303,6 +1383,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-11',
     name: '50 Disc',
@@ -1318,6 +1399,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-20',
     name: '300 Wala',
@@ -1333,6 +1415,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-01',
     name: 'Cut 1/2 Big Roll',
@@ -1348,6 +1431,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'gl-12',
     name: '100 Disc',
@@ -1363,6 +1447,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-21',
     name: '1000 Wala',
@@ -1378,6 +1463,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-22',
     name: '2000 Wala',
@@ -1393,6 +1479,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-23',
     name: '5000 Wala',
@@ -1408,6 +1495,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gl-24',
     name: '10000 Wala',
@@ -1423,7 +1511,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- SOUND CRACKERS & NOVELTY SHOTS ---
+
   {
     id: 'snd-26',
     name: '28 Guncut',
@@ -1433,12 +1521,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 30,
     price: 30,
     discountPercent: 0,
-    image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9ImhzbCgzMyw3MCUsMzIlKSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9ImhzbCg4MSw2NSUsMTglKSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjEwNSIgcj0iNTUiIGZpbGw9ImhzbCgzMyw4MCUsNTUlKSIgZmlsbC1vcGFjaXR5PSIwLjE4Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTIwIiBmb250LXNpemU9IjU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj7wn5SrPC90ZXh0Pgo8dGV4dCB4PSIyMDAiIHk9IjE4NSIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC45Ij5HQzwvdGV4dD4KPHRleHQgeD0iMjAwIiB5PSIyNzAiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuODUiPjI4IEd1bmN1dDwvdGV4dD4KPC9zdmc+',
+    image: 'https://5.imimg.com/data5/SELLER/Default/2024/10/461420314/BT/FD/JE/23186397/gun-shot-crackers-250x250.jpg',
     description: 'Premium quality 28 Guncut - crackling sound cracker for a dazzling celebration.',
     soundLevel: 'High',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-13',
     name: 'Star',
@@ -1454,6 +1543,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-19',
     name: 'Pineapple',
@@ -1469,6 +1559,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-05',
     name: 'Shot',
@@ -1484,6 +1575,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-09',
     name: 'Fast Flash',
@@ -1499,6 +1591,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-14',
     name: 'Sunlight',
@@ -1514,6 +1607,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-15',
     name: 'Hurricane',
@@ -1529,6 +1623,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-16',
     name: 'Music Rock',
@@ -1544,6 +1639,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-17',
     name: 'Color Sound',
@@ -1559,6 +1655,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-22',
     name: 'Mini Sun',
@@ -1574,6 +1671,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-07',
     name: 'Liver',
@@ -1589,6 +1687,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-04',
     name: 'Whistle',
@@ -1604,6 +1703,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-03',
     name: 'Pentastar',
@@ -1619,6 +1719,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-10',
     name: 'Peacock',
@@ -1634,6 +1735,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-11',
     name: 'Bomb Rock',
@@ -1649,6 +1751,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-12',
     name: 'Select',
@@ -1664,6 +1767,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-23',
     name: 'Peacock Sun',
@@ -1679,6 +1783,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-02',
     name: 'Bullet',
@@ -1694,6 +1799,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-20',
     name: 'Bat Ball',
@@ -1709,6 +1815,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-24',
     name: 'Jungle Sun',
@@ -1724,6 +1831,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-25',
     name: 'Cracker Big',
@@ -1739,6 +1847,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-01',
     name: 'Cylinder Bomb',
@@ -1754,6 +1863,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'snd-08',
     name: 'Krishna',
@@ -1769,6 +1879,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-21',
     name: 'Sky',
@@ -1784,6 +1895,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-06',
     name: 'T. Comet',
@@ -1799,6 +1911,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'snd-18',
     name: 'Digital Sound',
@@ -1814,7 +1927,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- NOVELTY, TOY & SMOKE ITEMS ---
+
   {
     id: 'nov-07',
     name: 'Peacock Kitty',
@@ -1824,12 +1937,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 150,
     price: 150,
     discountPercent: 0,
-    image: 'https://ukno.in/uploads/gallery/Vasantham_Crackers_World_1231888385.jpeg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Firecracker_Flowerpot.jpg',
     description: 'Premium quality Peacock Kitty - fun novelty item for a dazzling celebration.',
     soundLevel: 'Low',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'nov-05',
     name: 'Cragly (Rly)',
@@ -1845,6 +1959,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'nov-06',
     name: 'Tom-Jerry (Rly)',
@@ -1860,6 +1975,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'nov-08',
     name: 'Pappaya (5 PC)',
@@ -1875,6 +1991,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'sm-01',
     name: 'Color Smoke',
@@ -1890,6 +2007,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'nov-10',
     name: 'Cragly Kitty',
@@ -1905,6 +2023,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'nov-02',
     name: 'Pistol Set',
@@ -1920,6 +2039,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'nov-11',
     name: 'Magic Tail',
@@ -1935,6 +2055,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'nov-04',
     name: 'Electric Stone',
@@ -1950,6 +2071,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'nov-09',
     name: 'Black Money',
@@ -1965,6 +2087,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'nov-03',
     name: 'Cracking Box (3 PC)',
@@ -1980,6 +2103,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'sm-02',
     name: 'Smoke Shot',
@@ -1995,6 +2119,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'nov-01',
     name: 'Race Car',
@@ -2010,7 +2135,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
-  // --- FOUNTAINS & SPECIAL NOVELTY ---
+
   {
     id: 'ftn-18',
     name: 'Bottle (50)',
@@ -2020,12 +2145,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 60,
     price: 60,
     discountPercent: 0,
-    image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9ImhzbCgxNzcsNzAlLDMyJSkiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJoc2woMjI1LDY1JSwxOCUpIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTA1IiByPSI1NSIgZmlsbD0iaHNsKDE3Nyw4MCUsNTUlKSIgZmlsbC1vcGFjaXR5PSIwLjE4Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTIwIiBmb250LXNpemU9IjU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj7im7I8L3RleHQ+Cjx0ZXh0IHg9IjIwMCIgeT0iMTg1IiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjkiPkI1PC90ZXh0Pgo8dGV4dCB4PSIyMDAiIHk9IjI3MCIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC44NSI+Qm90dGxlICg1MCk8L3RleHQ+Cjwvc3ZnPg==',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Diwali_Fireworks_(58821899).jpg',
     description: 'Premium quality Bottle (50) - special novelty fountain for a dazzling celebration.',
     soundLevel: 'Low',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-19',
     name: 'Bottle (100)',
@@ -2041,6 +2167,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-02',
     name: 'Color Drops',
@@ -2056,6 +2183,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-21',
     name: 'Road Show',
@@ -2071,6 +2199,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-20',
     name: 'Cracker',
@@ -2086,6 +2215,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-14',
     name: '1 1/2 One Mix',
@@ -2101,6 +2231,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-01',
     name: 'Sutli Drops',
@@ -2116,6 +2247,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'ftn-03',
     name: 'Water Falls',
@@ -2131,6 +2263,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-07',
     name: 'Pocket World',
@@ -2146,6 +2279,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-16',
     name: 'Fancy Wheel',
@@ -2161,6 +2295,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-04',
     name: 'Aqua Sonic',
@@ -2176,6 +2311,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-08',
     name: 'Hot Wheel',
@@ -2191,6 +2327,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-12',
     name: 'Super Water',
@@ -2206,6 +2343,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-15',
     name: '2 1/2 One Mix',
@@ -2221,6 +2359,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-05',
     name: 'Peacock Fancy',
@@ -2236,6 +2375,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-06',
     name: 'Rice Stream',
@@ -2251,6 +2391,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-09',
     name: 'Mega Power',
@@ -2266,6 +2407,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-10',
     name: 'Silver Pot',
@@ -2281,6 +2423,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-11',
     name: 'Golden Peacock',
@@ -2296,6 +2439,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-17',
     name: 'Mega Monster',
@@ -2311,6 +2455,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'ftn-13',
     name: '1 1/2 Wave',
@@ -2326,7 +2471,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- ATLES CRACKERS ---
+
   {
     id: 'at-14',
     name: 'Green Spl (AT)',
@@ -2342,6 +2487,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-17',
     name: 'FIP Big AT',
@@ -2357,6 +2503,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-05',
     name: 'Green SP (AT)',
@@ -2372,6 +2519,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-18',
     name: 'FIP Spl AT',
@@ -2387,6 +2535,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-04',
     name: 'Green Mix (AT)',
@@ -2402,6 +2551,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-01',
     name: 'AT 5 in 1',
@@ -2417,6 +2567,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'at-02',
     name: 'AT 6 in 1',
@@ -2432,6 +2583,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-08',
     name: 'Green AT',
@@ -2447,6 +2599,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-16',
     name: 'Color AT',
@@ -2462,6 +2615,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-06',
     name: 'Crack Jack (AT)',
@@ -2477,6 +2631,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-09',
     name: 'Assorted AT',
@@ -2492,6 +2647,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-10',
     name: 'Nacha AT',
@@ -2507,6 +2663,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-11',
     name: 'Carbon AT',
@@ -2522,6 +2679,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-03',
     name: 'AT Candy',
@@ -2537,6 +2695,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-07',
     name: 'SPL Big AT',
@@ -2552,6 +2711,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-13',
     name: 'Green Big (AT)',
@@ -2567,6 +2727,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-15',
     name: 'Green Disc (Big)',
@@ -2582,6 +2743,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'at-12',
     name: 'Siren AT',
@@ -2597,7 +2759,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- AERIAL SHOTS / FANCY SHOTS ---
+
   {
     id: 'as-01',
     name: 'Chota Fancy',
@@ -2613,6 +2775,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'as-04',
     name: '2 1/2 in Fancy',
@@ -2628,6 +2791,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-05',
     name: '3 in Fancy',
@@ -2643,6 +2807,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-06',
     name: '3 in Fancy',
@@ -2658,6 +2823,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-03',
     name: '3 in (3 PC)',
@@ -2673,6 +2839,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-07',
     name: '3 1/2 in (3 PC)',
@@ -2688,6 +2855,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-08',
     name: '4 in Fancy',
@@ -2703,6 +2871,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-09',
     name: '4 in Double',
@@ -2718,6 +2887,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-10',
     name: '5 inch Fancy',
@@ -2733,6 +2903,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-02',
     name: '2 1/2 in Fancy',
@@ -2748,6 +2919,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-11',
     name: '2 1/2 inch Set',
@@ -2763,6 +2935,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-13',
     name: '3 1/2 inch Set',
@@ -2778,6 +2951,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'as-12',
     name: '2 1/2 inch Shot',
@@ -2793,7 +2967,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- MULTI-SHOT CAKES ---
+
   {
     id: 'msc-08',
     name: '12 Shot (RR)',
@@ -2809,6 +2983,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'msc-02',
     name: '12 Shot',
@@ -2824,6 +2999,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'msc-03',
     name: '20 Shot',
@@ -2839,6 +3015,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'msc-04',
     name: '60 Shot',
@@ -2854,6 +3031,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'msc-09',
     name: '60 Shot AK',
@@ -2869,6 +3047,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'msc-01',
     name: '12 Shot Deluxe',
@@ -2884,6 +3063,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'msc-05',
     name: '120 Shot',
@@ -2899,6 +3079,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'msc-06',
     name: '240 Shot',
@@ -2914,6 +3095,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'msc-07',
     name: '1000 AT Shot',
@@ -2929,7 +3111,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- ROCKETS ---
+
   {
     id: 'rkt-03',
     name: 'K Rocket',
@@ -2939,12 +3121,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 50,
     price: 50,
     discountPercent: 0,
-    image: 'https://fireflycrackers.com/images/products/68c25ffb16924jpg',
+    image: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Launching_firework_rocket.jpg#product-193',
     description: 'Premium quality K Rocket - sky-flying rocket for a dazzling celebration.',
     soundLevel: 'Medium',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'rkt-02',
     name: 'Color Rocket',
@@ -2960,6 +3143,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'rkt-01',
     name: 'Cake Rocker',
@@ -2975,6 +3159,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: true,
   },
+
   {
     id: 'rkt-05',
     name: '12 Rider (RR)',
@@ -2990,6 +3175,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'rkt-04',
     name: 'Rocket',
@@ -3005,6 +3191,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'rkt-06',
     name: '2pc (RK)',
@@ -3020,6 +3207,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'rkt-07',
     name: '3pc (RK)',
@@ -3035,7 +3223,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
-  // --- GIFT BOX / COMBO SETS ---
+
   {
     id: 'gift-01',
     name: '16 Item',
@@ -3045,12 +3233,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 350,
     price: 350,
     discountPercent: 0,
-    image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9ImhzbCgzNDMsNzAlLDMyJSkiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJoc2woMjUsNjUlLDE4JSkiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0idXJsKCNnKSIvPgo8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxMDUiIHI9IjU1IiBmaWxsPSJoc2woMzQzLDgwJSw1NSUpIiBmaWxsLW9wYWNpdHk9IjAuMTgiLz4KPHRleHQgeD0iMjAwIiB5PSIxMjAiIGZvbnQtc2l6ZT0iNTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPvCfjoE8L3RleHQ+Cjx0ZXh0IHg9IjIwMCIgeT0iMTg1IiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjkiPjFJPC90ZXh0Pgo8dGV4dCB4PSIyMDAiIHk9IjI3MCIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC44NSI+MTYgSXRlbTwvdGV4dD4KPC9zdmc+',
+    image: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Fireworks_image.jpg#product-200',
     description: 'Premium quality 16 Item - festive combo gift box for a dazzling celebration.',
     soundLevel: 'Medium',
     inStock: true,
     featured: true,
   },
+
   {
     id: 'gift-02',
     name: '28 Item',
@@ -3060,12 +3249,13 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 500,
     price: 500,
     discountPercent: 0,
-    image: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Colourful_Fireworks_Expanding_Across_the_Night_Sky.jpg#product-203',
+    image: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Fireworks_Expanding_Outward_in_the_Night_Sky.jpg#product-201',
     description: 'Premium quality 28 Item - festive combo gift box for a dazzling celebration.',
     soundLevel: 'Medium',
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gift-03',
     name: '24 Item',
@@ -3081,6 +3271,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gift-04',
     name: '28 Item',
@@ -3096,6 +3287,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gift-05',
     name: '34 Item',
@@ -3111,6 +3303,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gift-06',
     name: '37 Item',
@@ -3126,6 +3319,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gift-07',
     name: '41 Item',
@@ -3141,6 +3335,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gift-08',
     name: '45 Item',
@@ -3156,6 +3351,7 @@ export const RAW_PRODUCTS: Product[] = [
     inStock: true,
     featured: false,
   },
+
   {
     id: 'gift-09',
     name: '55 Item',
@@ -3165,20 +3361,88 @@ export const RAW_PRODUCTS: Product[] = [
     mrp: 2000,
     price: 2000,
     discountPercent: 0,
-    image: 'https://fireflycrackers.com/images/products/68d2984ee392cjpg',
+    image: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Fireworks_image.jpg#product-208',
     description: 'Premium quality 55 Item - festive combo gift box for a dazzling celebration.',
     soundLevel: 'Medium',
     inStock: true,
     featured: false,
   },
 
-  // --- FANCY CRACKERS (ஃபேன்சி பட்டாசுகள்) ---
-  { id: 'fcy-01', name: 'Magical Mushroom', tamilName: 'மேஜிக்கல் மஷ்ரூம்', category: 'fancy_crackers', unit: '1 Piece', mrp: 650, price: 520, discountPercent: 20, image: 'https://5.imimg.com/data5/SELLER/Default/2024/8/444352210/QW/ER/TY/23186397/pineapple-cracker-250x250.jpg', description: 'Magical Mushroom fancy cracker.', soundLevel: 'Visual No-Sound', inStock: true, featured: false },
-  { id: 'fcy-02', name: 'Popcorn', tamilName: 'பாப்கார்ன்', category: 'fancy_crackers', unit: '1 Piece', mrp: 320, price: 256, discountPercent: 20, image: 'https://5.imimg.com/data5/SELLER/Default/2024/8/444352190/LP/XY/AB/23186397/star-cracker-250x250.jpg', description: 'Popcorn fancy cracker.', soundLevel: 'Visual No-Sound', inStock: true, featured: false },
-  { id: 'fcy-03', name: 'Ravanan', tamilName: 'ராவணன்', category: 'fancy_crackers', unit: '1 Piece', mrp: 360, price: 288, discountPercent: 20, image: 'https://5.imimg.com/data5/SELLER/Default/2024/8/444352240/AS/DF/GH/23186397/shot-crackers-250x250.jpg', description: 'Ravanan fancy cracker.', soundLevel: 'Visual No-Sound', inStock: true, featured: false },
-  { id: 'fcy-04', name: 'RM 21M Candle', tamilName: 'RM 21M கேண்டில்', category: 'fancy_crackers', unit: '1 Piece', mrp: 180, price: 144, discountPercent: 20, image: 'https://5.imimg.com/data5/SELLER/Default/2024/8/444352260/JK/LZ/XC/23186397/fast-flash-crackers-250x250.jpg', description: 'RM 21M Candle fancy cracker.', soundLevel: 'Visual No-Sound', inStock: true, featured: false },
-  { id: 'fcy-05', name: 'Rainbow Candle', tamilName: 'ரெயின்போ கேண்டில்', category: 'fancy_crackers', unit: '1 Piece', mrp: 200, price: 160, discountPercent: 20, image: 'https://5.imimg.com/data5/SELLER/Default/2024/8/444352280/VB/NM/QW/23186397/sunlight-crackers-250x250.jpg', description: 'Rainbow Candle fancy cracker.', soundLevel: 'Visual No-Sound', inStock: true, featured: false },
-
+  {
+    id: 'fc-01',
+    name: 'Magical Mushroom',
+    tamilName: 'மேஜிக்கல் மஷ்ரூம்',
+    category: 'fancy_crackers',
+    unit: '1 Piece',
+    mrp: 650,
+    price: 520,
+    discountPercent: 20,
+    image: 'https://r2.sriseosolutions.com/krcrackers.in/upload/product_image_30_08_2025_12_06_46.webp',
+    description: 'Premium quality Magical Mushroom fireworks product.',
+    soundLevel: 'Visual No-Sound',
+    inStock: true,
+    featured: false,
+  },
+  {
+    id: 'fc-02',
+    name: 'Popcorn',
+    tamilName: 'பாப்கார்ன்',
+    category: 'fancy_crackers',
+    unit: '1 Piece',
+    mrp: 320,
+    price: 256,
+    discountPercent: 20,
+    image: 'https://www.butterflycrackers.com/sites/default/files/styles/product_images/public/crackers/popcorn.png.webp?itok=EzjSDQTg',
+    description: 'Premium quality Popcorn fireworks product.',
+    soundLevel: 'Visual No-Sound',
+    inStock: true,
+    featured: false,
+  },
+  {
+    id: 'fc-03',
+    name: 'Ravanan',
+    tamilName: 'ராவணன்',
+    category: 'fancy_crackers',
+    unit: '1 Piece',
+    mrp: 360,
+    price: 288,
+    discountPercent: 20,
+    image: 'https://srisrisaicrackers.in/uploads/productimg/Untitled3.png',
+    description: 'Premium quality Ravanan fireworks product.',
+    soundLevel: 'Visual No-Sound',
+    inStock: true,
+    featured: false,
+  },
+  {
+    id: 'fc-04',
+    name: 'RM 21M Candle',
+    tamilName: 'RM 21M கேண்டில்',
+    category: 'fancy_crackers',
+    unit: '1 Piece',
+    mrp: 180,
+    price: 144,
+    discountPercent: 20,
+    image: 'https://butterflycrackers.com/sites/default/files/styles/product_images/public/crackers/hi_tech_candle.png.webp?itok=VS6p9LYK',
+    description: 'Premium quality RM 21M Candle fireworks product.',
+    soundLevel: 'Visual No-Sound',
+    inStock: true,
+    featured: false,
+  },
+  {
+    id: 'fc-05',
+    name: 'Rainbow Candle',
+    tamilName: 'ரெயின்போ கேண்டில்',
+    category: 'fancy_crackers',
+    unit: '1 Piece',
+    mrp: 200,
+    price: 160,
+    discountPercent: 20,
+    image: 'https://pmscrackers.com/media/product_images/set_2_28.png',
+    description: 'Premium quality Rainbow Candle fireworks product.',
+    soundLevel: 'Visual No-Sound',
+    inStock: true,
+    featured: false,
+  },
 ];
 
 // Sivakasi Factory Standard Pricing:
