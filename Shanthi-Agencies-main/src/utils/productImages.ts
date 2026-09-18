@@ -1,6 +1,76 @@
 // Diverse, authentic, real cracker & fireworks photography collection
 // Ensures distinct photos across products and prevents identical repeated imagery
 
+// Ragas catalogue crops supplied from the product album.
+// These are local assets so the images continue to work in production builds.
+export const RAGAS_PRODUCT_CROPS: Record<string, string> = {
+  '7 cm Electric': '/products/ragas/7_cm_Electric.jpg',
+  '7 cm Glittering': '/products/ragas/7_cm_Glittering.jpg',
+  '7 cm Green': '/products/ragas/7_cm_Green.jpg',
+  '7 cm Red': '/products/ragas/7_cm_Red.jpg',
+  '10 cm Electric': '/products/ragas/10_cm_Electric.jpg',
+  '10 cm Glittering': '/products/ragas/10_cm_Glittering.jpg',
+  '10 cm Green': '/products/ragas/10_cm_Green.jpg',
+  '10 cm Red': '/products/ragas/10_cm_Red.jpg',
+  '12 cm Electric': '/products/ragas/12_cm_Electric.jpg',
+  '12 cm Glittering': '/products/ragas/12_cm_Glittering.jpg',
+  '12 cm Green': '/products/ragas/12_cm_Green.jpg',
+  '12 cm Red': '/products/ragas/12_cm_Red.jpg',
+  '15 cm Electric': '/products/ragas/15_cm_Electric.jpg',
+  '15 cm Glittering': '/products/ragas/15_cm_Glittering.jpg',
+  '15 cm Green': '/products/ragas/15_cm_Green.jpg',
+  '15 cm Red': '/products/ragas/15_cm_Red.jpg',
+  '15 cm Silver Drops': '/products/ragas/15_cm_Silver_Drops.jpg',
+  '30 cm Electric': '/products/ragas/30_cm_Electric.jpg',
+  '30 cm Glittering': '/products/ragas/30_cm_Glittering.jpg',
+  '30 cm Green': '/products/ragas/30_cm_Green.jpg',
+  '30 cm Red': '/products/ragas/30_cm_Red.jpg',
+  '50 cm Electric': '/products/ragas/50_cm_Electric.jpg',
+  '50 cm Glittering': '/products/ragas/50_cm_Glittering.jpg',
+  '75 cm Electric': '/products/ragas/75_cm_Electric.jpg',
+  '75 cm Glittering': '/products/ragas/75_cm_Glittering.jpg',
+};
+
+// Conservative matches to the current product IDs. Only strong size/colour/order
+// matches are overridden; unmatched crops remain available in RAGAS_PRODUCT_CROPS
+// without inventing a product-to-image relationship.
+const RAGAS_PRODUCT_ID_OVERRIDES: Record<string, string> = {
+  // 7 cm / 7.5 cm series
+  'spk-20': RAGAS_PRODUCT_CROPS['7 cm Electric'],
+  'spk-21': RAGAS_PRODUCT_CROPS['7 cm Glittering'],
+  'spk-22': RAGAS_PRODUCT_CROPS['7 cm Green'],
+  'spk-23': RAGAS_PRODUCT_CROPS['7 cm Red'],
+
+  // 10 cm series
+  'spk-01': RAGAS_PRODUCT_CROPS['10 cm Electric'],
+  'spk-02': RAGAS_PRODUCT_CROPS['10 cm Glittering'],
+  'spk-03': RAGAS_PRODUCT_CROPS['10 cm Red'],
+  'spk-04': RAGAS_PRODUCT_CROPS['10 cm Green'],
+
+  // 12 cm series
+  'spk-05': RAGAS_PRODUCT_CROPS['12 cm Electric'],
+  'spk-06': RAGAS_PRODUCT_CROPS['12 cm Glittering'],
+  'spk-07': RAGAS_PRODUCT_CROPS['12 cm Green'],
+  'spk-08': RAGAS_PRODUCT_CROPS['12 cm Red'],
+
+  // 15 cm series
+  'spk-09': RAGAS_PRODUCT_CROPS['15 cm Electric'],
+  'spk-10': RAGAS_PRODUCT_CROPS['15 cm Glittering'],
+  'spk-11': RAGAS_PRODUCT_CROPS['15 cm Green'],
+  'spk-12': RAGAS_PRODUCT_CROPS['15 cm Red'],
+  'spk-13': RAGAS_PRODUCT_CROPS['15 cm Silver Drops'],
+
+  // Larger sparklers; use the closest size in the existing 30/50/75 cm catalogue entries.
+  'spk-14': RAGAS_PRODUCT_CROPS['30 cm Electric'],
+  'spk-15': RAGAS_PRODUCT_CROPS['30 cm Green'],
+  'spk-16': RAGAS_PRODUCT_CROPS['30 cm Glittering'],
+  'spk-17': RAGAS_PRODUCT_CROPS['30 cm Red'],
+  'spk-18': RAGAS_PRODUCT_CROPS['50 cm Electric'],
+  'spk-19': RAGAS_PRODUCT_CROPS['50 cm Glittering'],
+  'spk-24': RAGAS_PRODUCT_CROPS['75 cm Electric'],
+  'spk-25': RAGAS_PRODUCT_CROPS['75 cm Glittering'],
+};
+
 // 1. SPARKLERS (கம்பி மத்தாப்பு) - Real photographs of electric, gold, green, red, crackling sparklers
 export const SPARKLER_PHOTOS = [
   'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=500&q=80', // Golden handheld sparkler
@@ -85,7 +155,17 @@ function hashString(str: string): number {
   return Math.abs(hash);
 }
 
-export function getProductRealImageUrl(product: { id?: string; name: string; category: string; image?: string }): string {
+export function getProductRealImageUrl(product: { id?: string; name: string; tamilName?: string; category: string; image?: string }): string {
+  // Prefer a verified local Ragas crop when this product has a conservative ID match.
+  if (product.id && RAGAS_PRODUCT_ID_OVERRIDES[product.id]) {
+    return RAGAS_PRODUCT_ID_OVERRIDES[product.id];
+  }
+
+  // If the product name exactly matches a Ragas crop, use that local image.
+  if (RAGAS_PRODUCT_CROPS[product.name]) {
+    return RAGAS_PRODUCT_CROPS[product.name];
+  }
+
   // If product already has an external URL (http/https), use it
   if (product.image && product.image.startsWith('http')) {
     return product.image;
