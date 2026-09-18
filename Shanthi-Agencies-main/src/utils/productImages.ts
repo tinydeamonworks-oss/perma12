@@ -176,7 +176,14 @@ function hashString(str: string): number {
 }
 
 export function getProductRealImageUrl(product: { id?: string; name: string; tamilName?: string; category: string; image?: string }): string {
-  // The Excel/catalog URL is authoritative. Use it before any fallback image.
+  // Sound Crackers & Novelty Shots: use the bundled category photo first so the
+  // category always has a working image even when an Excel URL is missing/broken.
+  if (product.category === 'sound_crackers' && USER_SUPPLIED_PRODUCT_PHOTOS.sound_crackers?.length) {
+    const seed = hashString((product.id || '') + product.name);
+    return USER_SUPPLIED_PRODUCT_PHOTOS.sound_crackers[seed % USER_SUPPLIED_PRODUCT_PHOTOS.sound_crackers.length];
+  }
+
+  // The Excel/catalog URL is authoritative for other categories.
   if (product.image && product.image.startsWith('http')) {
     return product.image;
   }
