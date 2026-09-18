@@ -35,6 +35,8 @@ export const RAGAS_PRODUCT_CROPS: Record<string, string> = {
 // matches are overridden; unmatched crops remain available in RAGAS_PRODUCT_CROPS
 // without inventing a product-to-image relationship.
 const RAGAS_PRODUCT_ID_OVERRIDES: Record<string, string> = {
+  // Exact product visible in the uploaded album.
+  'nov-01': '/products/user-supplied/source_07.jpg', // Race Car
   // 7 cm / 7.5 cm series
   'spk-20': RAGAS_PRODUCT_CROPS['7 cm Electric'],
   'spk-21': RAGAS_PRODUCT_CROPS['7 cm Glittering'],
@@ -141,6 +143,24 @@ export const GIFT_BOX_PHOTOS = [
   'https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?auto=format&fit=crop&w=500&q=80', // Diwali mega pack box
 ];
 
+
+// User-supplied product photos from the uploaded album/document.
+// These are preferred over generic stock/Unsplash fallbacks.
+export const USER_SUPPLIED_PRODUCT_PHOTOS: Record<string, string[]> = {
+  sparklers: ['/products/user-supplied/source_16.jpg', '/products/user-supplied/source_14.jpg', '/products/user-supplied/source_02.jpg'],
+  flower_pots: ['/products/user-supplied/source_19.jpg', '/products/user-supplied/source_22.jpg', '/products/user-supplied/source_13.jpg'],
+  ground_chakkars: ['/products/user-supplied/source_17.jpg', '/products/user-supplied/source_12.jpg'],
+  garlands: ['/products/user-supplied/source_20.jpg', '/products/user-supplied/source_16.jpg'],
+  sound_crackers: ['/products/user-supplied/source_10.jpg', '/products/user-supplied/source_28.jpg'],
+  novelty_toys: ['/products/user-supplied/source_07.jpg', '/products/user-supplied/source_26.jpg', '/products/user-supplied/source_15.jpg'],
+  fountains: ['/products/user-supplied/source_11.jpg', '/products/user-supplied/source_13.jpg', '/products/user-supplied/source_22.jpg'],
+  rockets: ['/products/user-supplied/source_18.jpg', '/products/user-supplied/source_30.jpg'],
+  aerial_thunder: ['/products/user-supplied/source_03.jpg', '/products/user-supplied/source_04.jpg', '/products/user-supplied/source_09.jpg'],
+  aerial_shots: ['/products/user-supplied/source_01.jpg', '/products/user-supplied/source_27.jpg', '/products/user-supplied/source_29.jpg'],
+  multishot_cakes: ['/products/user-supplied/source_01.jpg', '/products/user-supplied/source_29.jpg'],
+  gift_combo: ['/products/user-supplied/source_27.jpg', '/products/user-supplied/source_31.jpg'],
+};
+
 /**
  * Deterministically generates an authentic, real fireworks photo for any cracker.
  * Uses a stable string hash based on product ID and name so every product has a
@@ -166,14 +186,20 @@ export function getProductRealImageUrl(product: { id?: string; name: string; tam
     return RAGAS_PRODUCT_CROPS[product.name];
   }
 
+  const seed = hashString((product.id || '') + product.name);
+
+  // Prefer a user-supplied real product photo for every category before generic stock imagery.
+  const supplied = USER_SUPPLIED_PRODUCT_PHOTOS[product.category];
+  if (supplied?.length) {
+    return supplied[seed % supplied.length];
+  }
+
   // If product already has an external URL (http/https), use it
   if (product.image && product.image.startsWith('http')) {
     return product.image;
   }
 
   const name = product.name.toLowerCase();
-  const seed = hashString((product.id || '') + product.name);
-
   // 1. Sparklers
   if (
     name.includes('sparkler') ||
